@@ -1,0 +1,5 @@
+outs:
+- md5: 8127de29bd447f393f8a1a8467cb42fa
+  size: 1910304
+  hash: md5
+  path: 01_homely_resort_listing.csv
