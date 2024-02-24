@@ -11,14 +11,7 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict_datapoint')}}"method="post">
-      <!-- <input type="text" name="Pregnancies" placeholder="Pregnancies" required="required" />   
-      <input type="text" name="Glucose" placeholder="Glucose" required="required" /> 
-      <input type="text" name="BloodPressure" placeholder="BloodPressure" required="required" /> 
-      <input type="text" name="SkinThickness" placeholder="SkinThickness" required="required" /> 
-      <input type="text" name="Insulin" placeholder="Insulin" required="required" /> 
-      <input type="text" name="BMI" placeholder="BMI" required="required" /> 
-      <input type="text" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required" /> 
-      <input type="text" name="Age" placeholder="Age" required="required" />  -->
+
       <div class="form-outline form-group mb-4">
         {{ render_field(form.accommodates, class="form-control") }}
       </div>

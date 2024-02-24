@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/c7619339c657419fb76da2535f77b4da/artifacts
+end_time: 1708778915096
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: c7619339c657419fb76da2535f77b4da
+run_name: Gradient Boosting Regressor
+run_uuid: c7619339c657419fb76da2535f77b4da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708778914865
+status: 3
+tags: []
+user_id: sashe

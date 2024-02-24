@@ -1,0 +1,124 @@
+2024-02-24 21:21:46,243:WARNING:c:\Users\sashe\mlops\AImodel.py:28: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_flexible'][i] = 0
+
+2024-02-24 21:21:46,243:WARNING:c:\Users\sashe\mlops\AImodel.py:29: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_strict'][i] = 0
+
+2024-02-24 21:21:46,244:WARNING:c:\Users\sashe\mlops\AImodel.py:33: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['room_type_Entire home/apt'][i] = 0
+
+2024-02-24 21:21:46,244:WARNING:c:\Users\sashe\mlops\AImodel.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Shampoo'][i] = 1
+
+2024-02-24 21:21:46,245:WARNING:c:\Users\sashe\mlops\AImodel.py:55: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Smoke Detector'][i] = 1
+
+2024-02-24 21:21:46,245:WARNING:c:\Users\sashe\mlops\AImodel.py:57: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Suitable for Events'][i] = 1
+
+2024-02-24 21:27:10,412:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-24 21:27:10,412:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-24 21:27:10,412:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-24 21:27:10,412:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-24 21:31:00,595:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-24 21:31:00,596:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-24 21:31:00,596:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-24 21:31:00,596:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-24 21:37:28,795:WARNING:c:\Users\sashe\mlops\AImodel.py:22: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_flexible'][i] = 1
+
+2024-02-24 21:37:28,795:WARNING:c:\Users\sashe\mlops\AImodel.py:23: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_strict'][i] = 0
+
+2024-02-24 21:37:28,795:WARNING:c:\Users\sashe\mlops\AImodel.py:31: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['room_type_Entire home/apt'][i] = 1
+
+2024-02-24 21:37:28,796:WARNING:c:\Users\sashe\mlops\AImodel.py:39: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Doorman'][i] = 1
+
+2024-02-24 21:40:26,578:WARNING:c:\Users\sashe\mlops\AImodel.py:23: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_flexible'][i] = 1
+
+2024-02-24 21:40:26,578:WARNING:c:\Users\sashe\mlops\AImodel.py:24: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_strict'][i] = 0
+
+2024-02-24 21:40:26,579:WARNING:c:\Users\sashe\mlops\AImodel.py:32: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['room_type_Entire home/apt'][i] = 1
+
+2024-02-24 21:40:26,579:WARNING:c:\Users\sashe\mlops\AImodel.py:40: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Doorman'][i] = 1
+
+2024-02-24 21:40:42,240:WARNING:c:\Users\sashe\mlops\AImodel.py:23: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_flexible'][i] = 1
+
+2024-02-24 21:40:42,241:WARNING:c:\Users\sashe\mlops\AImodel.py:24: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_strict'][i] = 0
+
+2024-02-24 21:40:42,241:WARNING:c:\Users\sashe\mlops\AImodel.py:32: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['room_type_Entire home/apt'][i] = 1
+
+2024-02-24 21:40:42,241:WARNING:c:\Users\sashe\mlops\AImodel.py:40: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Doorman'][i] = 1
+
