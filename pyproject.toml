@@ -21,6 +21,7 @@ ipykernel = "^6.29.2"
 mlflow = "^2.10.2"
 gunicorn = "^21.2.0"
 app = "^0.0.1"
+wtforms = "^3.1.2"
 
 
 [build-system]

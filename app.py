@@ -1,5 +1,6 @@
 from flask import Flask, request, app,render_template
 from flask import Response
+from Forms import CreateUserForm_regression
 import pickle
 import numpy as np
 import pandas as pd
@@ -14,7 +15,7 @@ model = pickle.load(open("models/modelForPrediction.pkl", "rb"))
 @app.route('/',methods=['GET','POST'])
 def predict_datapoint():
     result=""
-
+    form = CreateUserForm_regression(request.form)
     if request.method=='POST':
 
         Pregnancies=int(request.form.get("Pregnancies"))
@@ -39,7 +40,7 @@ def predict_datapoint():
         return render_template('single_prediction.html',result=result)
 
     else:
-        return render_template('home.html')
+        return render_template('regression.html', form=form)
 
 
 if __name__=="__main__":
