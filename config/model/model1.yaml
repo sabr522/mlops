@@ -1,0 +1,12 @@
+dataset:
+  path: "C:/Users/kaiji/Data science directory/MLOPS/mlops-main/data/02_mushroom_data.csv"
+setup:
+  feature_selection: True
+  n_features_to_select : 0.2
+  remove_multicollinearity: True
+  multicollinearity_threshold: 0.95
+  ordinal_features: {'population':['scattered','numerous','abundant'],'ring-number':['none','one','two']}
+  low_variance_threshold: 0.2
+  categorical_imputation: 'drop'
+model:
+  path: "../../../../models/mushroomclass"
