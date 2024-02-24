@@ -179,6 +179,16 @@ files = [
 ]
 
 [[package]]
+name = "app"
+version = "0.0.1"
+description = "a simple egg"
+optional = false
+python-versions = "*"
+files = [
+    {file = "app-0.0.1.zip", hash = "sha256:214549e746d777292d807eec7713c2cea332e08e037c923cd61ee1d5ab7a127f"},
+]
+
+[[package]]
 name = "appdirs"
 version = "1.4.4"
 description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
@@ -5328,4 +5338,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9, <3.12"
-content-hash = "8b9785846404dc79de50f57e3d9fa7f4b1a9b44cf19330a928a2edfd52104e63"
+content-hash = "ba170fa9703c4feb479663dac1cb227b5d5036bac398e1ba02c31f92f7aa8e3a"
