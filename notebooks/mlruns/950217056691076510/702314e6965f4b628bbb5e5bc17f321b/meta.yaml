@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/702314e6965f4b628bbb5e5bc17f321b/artifacts
+end_time: 1708762059456
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: 702314e6965f4b628bbb5e5bc17f321b
+run_name: Bayesian Ridge
+run_uuid: 702314e6965f4b628bbb5e5bc17f321b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708762059088
+status: 3
+tags: []
+user_id: sashe

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/e85c9827777d47078cae54c6e79fe776/artifacts
+end_time: 1708760971239
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: e85c9827777d47078cae54c6e79fe776
+run_name: K Neighbors Regressor
+run_uuid: e85c9827777d47078cae54c6e79fe776
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708760970678
+status: 3
+tags: []
+user_id: sashe

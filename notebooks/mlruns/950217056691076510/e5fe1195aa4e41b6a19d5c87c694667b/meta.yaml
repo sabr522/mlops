@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/e5fe1195aa4e41b6a19d5c87c694667b/artifacts
+end_time: 1708757153822
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: e5fe1195aa4e41b6a19d5c87c694667b
+run_name: Least Angle Regression
+run_uuid: e5fe1195aa4e41b6a19d5c87c694667b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708757153546
+status: 3
+tags: []
+user_id: sashe

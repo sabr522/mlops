@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/087c567b283046aa937bf0ca8bb223f7/artifacts
+end_time: 1708759712096
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: 087c567b283046aa937bf0ca8bb223f7
+run_name: Decision Tree Regressor
+run_uuid: 087c567b283046aa937bf0ca8bb223f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708759711761
+status: 3
+tags: []
+user_id: sashe

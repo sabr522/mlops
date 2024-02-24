@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/3d1ca535e3dc4b718fc2814d4754a2ee/artifacts
+end_time: 1708759710273
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: 3d1ca535e3dc4b718fc2814d4754a2ee
+run_name: Lasso Regression
+run_uuid: 3d1ca535e3dc4b718fc2814d4754a2ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708759709942
+status: 3
+tags: []
+user_id: sashe

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/16b10fdf86d64c5489e7d22afd52b609/artifacts
+end_time: 1708759612063
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: 16b10fdf86d64c5489e7d22afd52b609
+run_name: Session Initialized 5945
+run_uuid: 16b10fdf86d64c5489e7d22afd52b609
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708759498943
+status: 3
+tags: []
+user_id: sashe

@@ -1,0 +1,8 @@
+channels:
+- conda-forge
+dependencies:
+- pip<=24.0
+- pip:
+  - mlflow==2.10.2
+  - pycaret==3.3.0
+name: 213002D-env

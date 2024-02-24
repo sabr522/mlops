@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/90969507246e45eb9e6917162a0e83dd/artifacts
+end_time: 1708759181097
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: 90969507246e45eb9e6917162a0e83dd
+run_name: Dummy Regressor
+run_uuid: 90969507246e45eb9e6917162a0e83dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708759180802
+status: 3
+tags: []
+user_id: sashe

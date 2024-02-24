@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/f632b0608a9044d38c4a3959f67e69fa/artifacts
+end_time: 1708759594148
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: f632b0608a9044d38c4a3959f67e69fa
+run_name: Huber Regressor
+run_uuid: f632b0608a9044d38c4a3959f67e69fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708759593872
+status: 3
+tags: []
+user_id: sashe

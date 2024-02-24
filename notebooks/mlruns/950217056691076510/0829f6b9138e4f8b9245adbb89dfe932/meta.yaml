@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/0829f6b9138e4f8b9245adbb89dfe932/artifacts
+end_time: 1708758856850
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: 0829f6b9138e4f8b9245adbb89dfe932
+run_name: Orthogonal Matching Pursuit
+run_uuid: 0829f6b9138e4f8b9245adbb89dfe932
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708758856565
+status: 3
+tags: []
+user_id: sashe

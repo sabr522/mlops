@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/8ebb976c85f343ad9514c03bfedcd9ad/artifacts
+end_time: 1708759708490
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: 8ebb976c85f343ad9514c03bfedcd9ad
+run_name: Ridge Regression
+run_uuid: 8ebb976c85f343ad9514c03bfedcd9ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708759708171
+status: 3
+tags: []
+user_id: sashe

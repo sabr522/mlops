@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/53a07b1cc1184b938ad59de44024051e/artifacts
+end_time: 1708759949894
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: 53a07b1cc1184b938ad59de44024051e
+run_name: Linear Regression
+run_uuid: 53a07b1cc1184b938ad59de44024051e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708759949579
+status: 3
+tags: []
+user_id: sashe

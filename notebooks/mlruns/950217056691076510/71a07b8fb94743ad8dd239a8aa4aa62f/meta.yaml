@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/71a07b8fb94743ad8dd239a8aa4aa62f/artifacts
+end_time: 1708759303849
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: 71a07b8fb94743ad8dd239a8aa4aa62f
+run_name: Elastic Net
+run_uuid: 71a07b8fb94743ad8dd239a8aa4aa62f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708759303663
+status: 3
+tags: []
+user_id: sashe

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/b5cf817149bb41f7a706614342a798f5/artifacts
+end_time: 1708759707058
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: b5cf817149bb41f7a706614342a798f5
+run_name: AdaBoost Regressor
+run_uuid: b5cf817149bb41f7a706614342a798f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708759706790
+status: 3
+tags: []
+user_id: sashe

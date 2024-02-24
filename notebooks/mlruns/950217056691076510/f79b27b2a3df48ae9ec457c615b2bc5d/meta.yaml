@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/950217056691076510/f79b27b2a3df48ae9ec457c615b2bc5d/artifacts
+end_time: 1708759181571
+entry_point_name: ''
+experiment_id: '950217056691076510'
+lifecycle_stage: active
+run_id: f79b27b2a3df48ae9ec457c615b2bc5d
+run_name: Passive Aggressive Regressor
+run_uuid: f79b27b2a3df48ae9ec457c615b2bc5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708759181240
+status: 3
+tags: []
+user_id: sashe
