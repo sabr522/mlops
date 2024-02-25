@@ -62,3 +62,37 @@ def Prediction_sharina(data, amenities):
     print(prediction['prediction_label'].iloc[0])
 
     return prediction['prediction_label'].iloc[0]
+
+
+def Prediction_kaijie(data):
+    with open('models/mushroomclass.pkl', 'rb') as f:
+        model = pickle.load(f)
+    print(model)
+    columns = ['cap-shape_flat','bruises','odor_none','gill-size']
+
+    
+    df = pd.DataFrame(data, columns=columns)
+    for i in df.index:
+        if df['cap-shape_flat'][i] == "Yes":
+            df['cap-shape_flat'][i] = 1
+        else:
+            df['cap-shape_flat'][i] = 0
+        if df['bruises'][i] == "Yes":
+            df['bruises'][i] = 0
+        else:
+            df['bruises'][i] = 1
+        if df['odor_none'][i] == "No":
+            df['odor_none'][i] = 1
+        else:
+            df['odor_none'][i] = 0
+        if df['gill-size'][i] == "Narrow":
+            df['gill-size'][i] = 1
+        else:
+            df['gill-size'][i] = 0
+
+
+    print(df)
+    prediction = predict_model(model, data=df)
+    print(prediction)
+
+    return prediction[0]
