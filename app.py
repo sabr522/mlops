@@ -42,7 +42,7 @@ def predict_datapoint():
                             maximum_nights, number_of_reviews, review_scores_communication,review_scores_rating, room_type,
                             0,0,0,0,0,0,0,0,0,0,0,0]]
         prediction_s = Prediction_sharina(data_arr_sharina, amenities)
-        result = 'Predicted Rent:', prediction_s 
+        result = 'Predicted Rent: ${:.2f}'.format(prediction_s)
         print(result)
         return render_template('single_prediction.html',result=result)
 

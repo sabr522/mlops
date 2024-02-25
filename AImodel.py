@@ -1,11 +1,10 @@
 import pandas as pd
 import numpy as np
 import pickle
-from pycaret.regression import predict_model
+from pycaret.regression import *
 
 def Prediction_sharina(data, amenities):
-    with open('models/regression.pkl', 'rb') as f:
-        model = pickle.load(f)
+    model = load_model('models/regression')
     print(model)
     columns = ['accommodates', 'availability_30', 'bathrooms', 'bedrooms', 'beds',
        'calculated_host_listings_count', 'cancellation_policy_flexible',
@@ -58,9 +57,8 @@ def Prediction_sharina(data, amenities):
             df['Smoke Detector'][i] = 1
         if 'Events' in amenities:
             df['Suitable for Events'][i] = 1
-
     print(df)
     prediction = predict_model(model, data=df)
-    print(prediction)
+    print(prediction['prediction_label'].iloc[0])
 
-    return prediction[0]
+    return prediction['prediction_label'].iloc[0]
