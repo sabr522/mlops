@@ -65,8 +65,7 @@ def Prediction_sharina(data, amenities):
 
 
 def Prediction_kaijie(data):
-    with open('models/mushroomclass.pkl', 'rb') as f:
-        model = pickle.load(f)
+    model = load_model('models/mushroomclass')
     print(model)
     columns = ['cap-shape_flat','bruises','odor_none','gill-size']
 
