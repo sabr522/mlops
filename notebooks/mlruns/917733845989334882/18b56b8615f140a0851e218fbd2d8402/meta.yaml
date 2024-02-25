@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/917733845989334882/18b56b8615f140a0851e218fbd2d8402/artifacts
+end_time: 1708851133186
+entry_point_name: ''
+experiment_id: '917733845989334882'
+lifecycle_stage: active
+run_id: 18b56b8615f140a0851e218fbd2d8402
+run_name: Naive Bayes
+run_uuid: 18b56b8615f140a0851e218fbd2d8402
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708851132978
+status: 3
+tags: []
+user_id: sashe

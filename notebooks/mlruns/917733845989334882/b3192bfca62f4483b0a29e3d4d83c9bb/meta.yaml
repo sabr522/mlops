@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/917733845989334882/b3192bfca62f4483b0a29e3d4d83c9bb/artifacts
+end_time: 1708851131136
+entry_point_name: ''
+experiment_id: '917733845989334882'
+lifecycle_stage: active
+run_id: b3192bfca62f4483b0a29e3d4d83c9bb
+run_name: Quadratic Discriminant Analysis
+run_uuid: b3192bfca62f4483b0a29e3d4d83c9bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708851130868
+status: 3
+tags: []
+user_id: sashe
