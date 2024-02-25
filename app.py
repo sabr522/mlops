@@ -54,12 +54,12 @@ def predict_kj():
     result=""
     form = mushroom_form(request.form)
     if request.method=='POST':
-        flat_cap = (request.form.get('flat_cap')
-        bruises= (request.form.get('bruises')
-        odor= (request.form.get('odor')
-        gill-size= (request.form.get('gill-size')
+        flat_cap = (request.form.get('flat_cap'))
+        bruises= (request.form.get('bruises'))
+        odor= (request.form.get('odor'))
+        gillsize= (request.form.get('gill-size'))
 
-        data_arr = [[flat_cap,bruises,odor,gill-size]]
+        data_arr = [[flat_cap,bruises,odor,gillsize]]
         p = Prediction_kaijie(data_arr)
         if p == 1:
             result = 'The mushroom is poisonous'
