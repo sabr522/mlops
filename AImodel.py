@@ -92,6 +92,6 @@ def Prediction_kaijie(data):
 
     print(df)
     prediction = predict_model(model, data=df)
-    print(prediction)
+    print(prediction['prediction_label'].iloc[0])
 
-    return prediction[0]
+    return prediction['prediction_label'].iloc[0]
