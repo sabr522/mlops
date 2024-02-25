@@ -1,6 +1,7 @@
 from flask import Flask, request, app,render_template
 from flask import Response
-from Forms import CreateUserForm_regression, mushroom_form
+from Forms import CreateUserForm_regression
+from Forms import mushroom_form
 from AImodel import Prediction_sharina, Prediction_kaijie
 import pickle
 import numpy as np
