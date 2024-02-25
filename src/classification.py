@@ -33,7 +33,7 @@ def modelling(cfg: DictConfig) -> None:
     df2 = s.get_config('dataset_transformed')
     df2 = df2.reset_index(drop=True)
 
-    s = setup(df2, session_id=123)
+    s = setup(df2, s = setup(df2,log_experiment=True,experiment_name='211602C' ,session_id=123)
     best = compare_models()
     final_best = finalize_model(best)
     save_model(final_best, cfg.model.path)
