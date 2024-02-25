@@ -9,7 +9,7 @@
 	<h1>Mushroom edibility prediction</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict_datapoint')}}"method="post">
+     <form action="{{ url_for('predict_kj')}}" method="post">
        <div class="form-outline form-group mb-4">
         {{ render_field(form.flat_cap, class="form-control") }}
       </div>
