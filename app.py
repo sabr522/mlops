@@ -57,7 +57,7 @@ def predict_kj():
         flat_cap = (request.form.get('flat_cap'))
         bruises= (request.form.get('bruises'))
         odor= (request.form.get('odor'))
-        gillsize= (request.form.get('gill-size'))
+        gillsize= (request.form.get('gillsize'))
 
         data_arr = [[flat_cap,bruises,odor,gillsize]]
         p = Prediction_kaijie(data_arr)
