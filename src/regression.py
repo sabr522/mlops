@@ -45,7 +45,7 @@ def modelling(cfg: DictConfig) -> None:
     df2 = s.get_config('dataset_transformed')
     df2 = df2.reset_index(drop=True)
 
-    s = setup(df2, session_id=123,transform_target = True)
+    s = setup(df2, session_id=123,transform_target = True, log_experiment = True, experiment_name = '213002D')
     best = compare_models()
     final_best = finalize_model(best)
     save_model(final_best, cfg.model.path)
