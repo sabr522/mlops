@@ -22,4 +22,4 @@ class mushroom_form(Form):
     flat_cap = SelectField('Is the mushroom cap flat?:', [validators.DataRequired()], choices=[('','Please Select...'),('Yes',"Yes"),('No','No')], default='')
     bruises = SelectField('Bruises?:', [validators.DataRequired()], choices=[('','Please Select...'),('Yes',"Yes"),('No','No')], default='')
     odor = SelectField('Any odor?:', [validators.DataRequired()], choices=[('','Please Select...'),('No',"No"),('Yes','Yes')], default='')
-    gill-size = SelectField('Gill Size:', [validators.DataRequired()], choices=[('','Please Select...'),('Broad',"Broad"),('Narrow','Narrow')], default='')
+    gillsize = SelectField('Gill Size:', [validators.DataRequired()], choices=[('','Please Select...'),('Broad',"Broad"),('Narrow','Narrow')], default='')
