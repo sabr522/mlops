@@ -49,7 +49,7 @@ def predict_datapoint():
 
     else:
         return render_template('regression.html', form=form)
-
+classification_model =pickle.load(open("models/mushroomclass.pkl", "rb"))
 @app.route('/page2',methods=['GET','POST'])
 def predict_kj():
     result=""
