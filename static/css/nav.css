@@ -67,13 +67,13 @@ body
   .navibar {
     height:80px;
     width:100%;
-    background-color: #C0C0C0;
+    background-color: #D3F2E9;
   }
 
   .navi{
     display:inline-block;
     float: left;
-    background-color: #C0C0C0;
+    background-color: #D3F2E9;
 
    
   }
@@ -86,7 +86,7 @@ body
   .navibar2 {
     height:20px;
     width:100%;
-    background-color: white;
+    background-color: #0A7B79;
   }
 
   #icon_img{
@@ -104,7 +104,7 @@ body
 
   /* Dropdown Button */
 .dropbtn {
-  background-color: #C0C0C0;
+  background-color: #0A7B79;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -134,7 +134,7 @@ body
 .dropdown-content {
   display: none;
   position: relative;
-  background-color: #E0E0E0;
+  background-color: #065250;
   min-width: 160px;
   z-index: 1;
   width:100%;
