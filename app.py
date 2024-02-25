@@ -53,7 +53,7 @@ def predict_datapoint():
 def predict_kj():
     result=""
     form = mushroom_form(request.form)
-    if request.method=='POST':
+    if request.method=='POST'and form.validate():
         flat_cap = request.form.get('flat_cap')
         bruises= request.form.get('bruises')
         odor= request.form.get('odor')
