@@ -1,7 +1,7 @@
 from flask import Flask, request, app,render_template
 from flask import Response
-from Forms import CreateUserForm_regression
-from AImodel import Prediction_sharina
+from Forms import CreateUserForm_regression, mushroom_form
+from AImodel import Prediction_sharina, Prediction_kaijie
 import pickle
 import numpy as np
 import pandas as pd
@@ -50,28 +50,23 @@ def predict_datapoint():
         return render_template('regression.html', form=form)
 
 @app.route('/page2',methods=['GET','POST'])
-def predict_datapoint_c():
+def predict_kj():
     result=""
+    form = mushroom_form(request.form)
     if request.method=='POST':
+        flat_cap = (request.form.get('flat_cap')
+        bruises= (request.form.get('bruises')
+        odor= (request.form.get('odor')
+        gill-size= (request.form.get('gill-size')
 
-        Pregnancies=int(request.form.get("Pregnancies"))
-        Glucose = float(request.form.get('Glucose'))
-        BloodPressure = float(request.form.get('BloodPressure'))
-        SkinThickness = float(request.form.get('SkinThickness'))
-        Insulin = float(request.form.get('Insulin'))
-        BMI = float(request.form.get('BMI'))
-        DiabetesPedigreeFunction = float(request.form.get('DiabetesPedigreeFunction'))
-        Age = float(request.form.get('Age'))
-
-        new_data=scaler.transform([[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
-        predict=model.predict(new_data)
-       
-        if predict[0] ==1 :
-            result = 'WE ARE SORRY TO INFORM THAT YOU MAY HAVE DIABETES! PLEASE SEEK MEDICAL ADVICE'
-            return render_template('single_prediction.html',result=result)
+        data_arr = [[flat_cap,bruises,odor,gill-size]]
+        p = Prediction_kaijie(data_arr)
+        if p == 1:
+            result = 'The mushroom is poisonous'
+        elif p == 0:
+            result = 'The mushroom is edible'
         else:
-            result ="CONGRATULATIONS! YOU DO NOT HAVE DIABETES! STAY HEALTHY."
-
+            result = 'No Prediction'
 
         return render_template('single_prediction.html',result=result)
 
