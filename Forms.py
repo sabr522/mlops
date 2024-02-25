@@ -17,4 +17,9 @@ class CreateUserForm_regression(Form):
     review_scores_communication = IntegerField('Rating score for communications:', [validators.DataRequired(), validators.NumberRange(min=0,max=10,message='Invalid')])
     review_scores_rating = IntegerField('Overall rating score:', [validators.DataRequired(), validators.NumberRange(min=0,max=10,message='Invalid')])
     room_type = SelectField('Room Type:', [validators.DataRequired()], choices=[('','Please Select...'),('Entire',"Entire Home/Apartment"),('Private','Private Room'),('Shared','Shared Room')], default='')
-    amenities = SelectMultipleField('Select amenities the accomodation has:', choices=[('Cable','Cable TV'),('Carbon',"Carbon Monoxide Detector"),('Doorman','Doorman'),('Essentials','Essentials'),('Extinguisher','Fire Extinguisher'),('Firstaid','First Aid Kit'),('Parking','Free Parking on Premises'),('Fireplace','Indoor Fireplace'),('Pool','Pool'),('Shampoo','Shampoo'),('Smoke','Smoke Detector'),('Events','Suitable for Events')], default='')
+    amenities = SelectMultipleField('Select amenities the accomodation has:', choices=[('Cable','Cable TV'),('Carbon',"Carbon Monoxide Detector"),('Doorman','Doorman'),('Essentials','Essentials'),('Extinguisher','Fire Extinguisher'),('Firstaid','First Aid Kit'),('Parking','Free Parking on Premises'),('Fireplace','Indoor Fireplace'),('Pool','Pool'),('Shampoo','Shampoo'),('Smoke','Smoke Detector'),('Events','Suitable for Events')], default='')    
+class mushroom_form(Form):
+    flat_cap = SelectField('Is the mushroom cap flat?:', [validators.DataRequired()], choices=[('','Please Select...'),('Yes',"Yes"),('No','No')], default='')
+    bruises = SelectField('Bruises?:', [validators.DataRequired()], choices=[('','Please Select...'),('Yes',"Yes"),('No','No')], default='')
+    odor = SelectField('Any odor?:', [validators.DataRequired()], choices=[('','Please Select...'),('No',"No"),('Yes','Yes')], default='')
+    gill-size = SelectField('Gill Size:', [validators.DataRequired()], choices=[('','Please Select...'),('Broad',"Broad"),('Narrow','Narrow')], default='')
