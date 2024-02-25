@@ -54,10 +54,10 @@ def predict_kj():
     result=""
     form = mushroom_form(request.form)
     if request.method=='POST':
-        flat_cap = (request.form.get('flat_cap'))
-        bruises= (request.form.get('bruises'))
-        odor= (request.form.get('odor'))
-        gillsize= (request.form.get('gillsize'))
+        flat_cap = request.form.get('flat_cap')
+        bruises= request.form.get('bruises')
+        odor= request.form.get('odor')
+        gillsize= request.form.get('gillsize')
 
         data_arr = [[flat_cap,bruises,odor,gillsize]]
         p = Prediction_kaijie(data_arr)
@@ -71,7 +71,7 @@ def predict_kj():
         return render_template('single_prediction.html',result=result)
 
     else:
-        return render_template('classification.html')
+        return render_template('classification.html',form=form)
 
 if __name__=="__main__":
     app.run(host='0.0.0.0')
