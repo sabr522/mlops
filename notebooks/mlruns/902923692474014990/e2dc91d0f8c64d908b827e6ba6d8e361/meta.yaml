@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/e2dc91d0f8c64d908b827e6ba6d8e361/artifacts
+end_time: 1708855433322
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: e2dc91d0f8c64d908b827e6ba6d8e361
+run_name: Ridge Classifier
+run_uuid: e2dc91d0f8c64d908b827e6ba6d8e361
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708855433100
+status: 3
+tags: []
+user_id: sashe

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/78e12b2efb63479d8f3108bbc8e32582/artifacts
+end_time: 1708856008790
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: 78e12b2efb63479d8f3108bbc8e32582
+run_name: Extra Trees Classifier
+run_uuid: 78e12b2efb63479d8f3108bbc8e32582
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708856008409
+status: 3
+tags: []
+user_id: sashe

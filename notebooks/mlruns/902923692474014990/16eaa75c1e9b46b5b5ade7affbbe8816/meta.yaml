@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/16eaa75c1e9b46b5b5ade7affbbe8816/artifacts
+end_time: 1708856015655
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: 16eaa75c1e9b46b5b5ade7affbbe8816
+run_name: Decision Tree Classifier
+run_uuid: 16eaa75c1e9b46b5b5ade7affbbe8816
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708856015385
+status: 3
+tags: []
+user_id: sashe

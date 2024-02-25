@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/f6e9ae9bf6f34134a4f80d2a6e633dfc/artifacts
+end_time: 1708854854744
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: f6e9ae9bf6f34134a4f80d2a6e633dfc
+run_name: Random Forest Classifier
+run_uuid: f6e9ae9bf6f34134a4f80d2a6e633dfc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708854854369
+status: 3
+tags: []
+user_id: sashe

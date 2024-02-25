@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/628188644388487782/2bd481e7daa1495b9f0253c2b5d3a267/artifacts
+end_time: 1708853137128
+entry_point_name: ''
+experiment_id: '628188644388487782'
+lifecycle_stage: active
+run_id: 2bd481e7daa1495b9f0253c2b5d3a267
+run_name: Extra Trees Regressor
+run_uuid: 2bd481e7daa1495b9f0253c2b5d3a267
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708853136423
+status: 3
+tags: []
+user_id: sashe

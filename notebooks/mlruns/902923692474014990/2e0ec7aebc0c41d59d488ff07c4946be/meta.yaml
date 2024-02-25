@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/2e0ec7aebc0c41d59d488ff07c4946be/artifacts
+end_time: 1708854857284
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: 2e0ec7aebc0c41d59d488ff07c4946be
+run_name: Logistic Regression
+run_uuid: 2e0ec7aebc0c41d59d488ff07c4946be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708854856935
+status: 3
+tags: []
+user_id: sashe

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708855584707
+current_stage: None
+description: null
+last_updated_timestamp: 1708855584707
+name: Mushroom Classification
+run_id: null
+run_link: null
+source: \mlruns\902923692474014990\9afc6ed006d3419181bdc95dba545ce5
+status: READY
+status_message: null
+storage_location: \mlruns\902923692474014990\9afc6ed006d3419181bdc95dba545ce5
+user_id: null
+version: 1

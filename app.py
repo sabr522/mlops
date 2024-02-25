@@ -28,20 +28,21 @@ def predict_datapoint():
         host_listings_count = int(request.form.get('host_listings_count'))
         cancellation_policy = request.form.get('cancellation_policy')
         guests_included = int(request.form.get('guests_included'))
-        latitude = float(request.form.get('latitude'))
-        longitude = float(request.form.get('longitude'))
         maximum_nights = int(request.form.get('maximum_nights'))
         number_of_reviews = int(request.form.get('number_of_reviews'))
         review_scores_communication = int(request.form.get('review_scores_communication'))
+        review_scores_location = int(request.form.get('review_scores_location'))
+        review_scores_value = int(request.form.get('review_scores_value'))
         review_scores_rating = int(request.form.get('review_scores_rating'))
         room_type = request.form.get('room_type')
         amenities = request.form.getlist('amenities')
 
+
         print(amenities)
         data_arr_sharina = [[accommodates, availability_30, bathrooms, bedrooms, beds, calculated_host_listings_count,
-                            cancellation_policy, cancellation_policy,guests_included, host_listings_count,latitude, longitude,
-                            maximum_nights, number_of_reviews, review_scores_communication,review_scores_rating, room_type,
-                            0,0,0,0,0,0,0,0,0,0,0,0]]
+                            cancellation_policy, cancellation_policy,guests_included, host_listings_count,maximum_nights, number_of_reviews,
+                            review_scores_communication,review_scores_location,review_scores_rating, review_scores_value,room_type,
+                            0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
         prediction_s = Prediction_sharina(data_arr_sharina, amenities)
         result = 'Predicted Rent: ${:.2f}'.format(prediction_s)
         print(result)

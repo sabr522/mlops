@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/628188644388487782/76f0894734df4f79b95cc38dda409f01/artifacts
+end_time: 1708853136109
+entry_point_name: ''
+experiment_id: '628188644388487782'
+lifecycle_stage: active
+run_id: 76f0894734df4f79b95cc38dda409f01
+run_name: Random Forest Regressor
+run_uuid: 76f0894734df4f79b95cc38dda409f01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708853135562
+status: 3
+tags: []
+user_id: sashe

@@ -773,3 +773,174 @@ pickle: {'deps_info': {'pip': '23.3.1', 'setuptools': '69.1.0', 'pycaret': '3.3.
 2024-02-25 15:48:56,217:INFO:Preloading libraries
 2024-02-25 15:48:56,217:INFO:Set up data.
 2024-02-25 15:48:56,219:INFO:Set up index.
+2024-02-25 18:14:53,570:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:14:53,570:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:14:53,570:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:14:53,570:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:15:46,315:INFO:Initializing load_model()
+2024-02-25 18:15:46,315:INFO:load_model(model_name=models/regression, platform=None, authentication=None, verbose=True)
+2024-02-25 18:16:36,701:INFO:Initializing load_model()
+2024-02-25 18:16:36,701:INFO:load_model(model_name=models/regression, platform=None, authentication=None, verbose=True)
+2024-02-25 18:16:53,540:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:16:53,540:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:16:53,540:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:16:53,540:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:17:15,685:INFO:Initializing load_model()
+2024-02-25 18:17:15,687:INFO:load_model(model_name=models/regression, platform=None, authentication=None, verbose=True)
+2024-02-25 18:17:57,322:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:17:57,322:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:17:57,322:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:17:57,322:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:18:19,067:INFO:Initializing load_model()
+2024-02-25 18:18:19,069:INFO:load_model(model_name=models/regression, platform=None, authentication=None, verbose=True)
+2024-02-25 18:21:28,165:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:21:28,165:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:21:28,165:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:21:28,166:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:21:51,106:INFO:Initializing load_model()
+2024-02-25 18:21:51,106:INFO:load_model(model_name=models/regression, platform=None, authentication=None, verbose=True)
+2024-02-25 18:21:52,475:WARNING:C:\Users\sashe\mlops\AImodel.py:33: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_flexible'][i] = 0
+
+2024-02-25 18:21:52,477:WARNING:C:\Users\sashe\mlops\AImodel.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_strict'][i] = 0
+
+2024-02-25 18:21:52,478:WARNING:C:\Users\sashe\mlops\AImodel.py:38: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['room_type_Entire home/apt'][i] = 0
+
+2024-02-25 18:21:52,479:WARNING:C:\Users\sashe\mlops\AImodel.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Doorman'][i] = 1
+
+2024-02-25 18:21:52,538:INFO:Initializing predict_model()
+2024-02-25 18:21:52,538:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AC70DBD9C0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['accommodates', 'availability_30',
+                                             'bathrooms', 'bedrooms', 'beds',
+                                             'calculated_host_listings_count',
+                                             'cancellation_policy_flexi...
+                                             'First Aid Kit', 'Hot Tub',
+                                             'Indoor Fireplace', 'Pets Allowed',
+                                             'Pool', 'Shampoo',
+                                             'Smoke Detector', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model', GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001AC70DC9870>)
+2024-02-25 18:21:52,538:INFO:Checking exceptions
+2024-02-25 18:21:52,539:INFO:Preloading libraries
+2024-02-25 18:21:52,539:INFO:Set up data.
+2024-02-25 18:21:52,551:INFO:Set up index.
+2024-02-25 18:21:52,705:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\mlflow\store\artifact\utils\models.py:32: FutureWarning: ``mlflow.tracking.client.MlflowClient.get_latest_versions`` is deprecated since 2.9.0. Model registry stages will be removed in a future major release. To learn more about the deprecation of model registry stages, see our migration guide here: https://mlflow.org/docs/2.10.2/model-registry.html#migrating-from-stages
+  latest = client.get_latest_versions(name, None if stage is None else [stage])
+
+2024-02-25 18:22:39,617:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:22:39,617:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:22:39,617:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:22:39,617:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:23:25,382:INFO:Initializing load_model()
+2024-02-25 18:23:25,382:INFO:load_model(model_name=models/regression, platform=None, authentication=None, verbose=True)
+2024-02-25 18:23:26,951:WARNING:C:\Users\sashe\mlops\AImodel.py:33: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_flexible'][i] = 0
+
+2024-02-25 18:23:26,955:WARNING:C:\Users\sashe\mlops\AImodel.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['cancellation_policy_strict'][i] = 0
+
+2024-02-25 18:23:26,956:WARNING:C:\Users\sashe\mlops\AImodel.py:36: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['room_type_Entire home/apt'][i] = 1
+
+2024-02-25 18:23:26,957:WARNING:C:\Users\sashe\mlops\AImodel.py:42: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['Carbon Monoxide Detector'][i] = 1
+
+2024-02-25 18:23:27,024:INFO:Initializing predict_model()
+2024-02-25 18:23:27,025:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000029F3476D9C0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['accommodates', 'availability_30',
+                                             'bathrooms', 'bedrooms', 'beds',
+                                             'calculated_host_listings_count',
+                                             'cancellation_policy_flexi...
+                                             'First Aid Kit', 'Hot Tub',
+                                             'Indoor Fireplace', 'Pets Allowed',
+                                             'Pool', 'Shampoo',
+                                             'Smoke Detector', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('trained_model', GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000029F347797E0>)
+2024-02-25 18:23:27,025:INFO:Checking exceptions
+2024-02-25 18:23:27,025:INFO:Preloading libraries
+2024-02-25 18:23:27,025:INFO:Set up data.
+2024-02-25 18:23:27,041:INFO:Set up index.
+2024-02-25 18:25:04,420:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:25:04,420:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:25:04,420:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:25:04,420:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:25:31,302:INFO:Initializing load_model()
+2024-02-25 18:25:31,303:INFO:load_model(model_name=models/regression, platform=None, authentication=None, verbose=True)
+2024-02-25 18:33:20,406:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:33:20,406:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:33:20,406:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:33:20,406:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-25 18:33:56,499:INFO:Initializing load_model()
+2024-02-25 18:33:56,500:INFO:load_model(model_name=models/regression, platform=None, authentication=None, verbose=True)

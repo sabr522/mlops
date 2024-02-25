@@ -10,7 +10,7 @@
 	<h1>Rental Predictor</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict_datapoint')}}"method="post">
+     <form action="{{ url_for('predict_datapoint')}}" method="post">
 
       <div class="form-outline form-group mb-4">
         {{ render_field(form.accommodates, class="form-control") }}
@@ -49,14 +49,6 @@
       </div>
       
       <div class="form-outline form-group mb-4">
-        {{ render_field(form.latitude, class="form-control") }}
-      </div>
-      
-      <div class="form-outline form-group mb-4">
-        {{ render_field(form.longitude, class="form-control") }}
-      </div>
-      
-      <div class="form-outline form-group mb-4">
         {{ render_field(form.maximum_nights, class="form-control") }}
       </div>
       
@@ -66,6 +58,14 @@
       
       <div class="form-outline form-group mb-4">
         {{ render_field(form.review_scores_communication, class="form-control") }}
+      </div>
+      
+      <div class="form-outline form-group mb-4">
+        {{ render_field(form.review_scores_location, class="form-control") }}
+      </div>
+      
+      <div class="form-outline form-group mb-4">
+        {{ render_field(form.review_scores_value, class="form-control") }}
       </div>
       
       <div class="form-outline form-group mb-4">
@@ -79,7 +79,8 @@
       <div class="form-outline form-group mb-4">
         {{ render_field(form.amenities, class="form-select", multiple="multiple") }}
       </div>
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
    <br>

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/647281ca1549493886091e9c036ac43b/artifacts
+end_time: 1708855432250
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: 647281ca1549493886091e9c036ac43b
+run_name: SVM - Linear Kernel
+run_uuid: 647281ca1549493886091e9c036ac43b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708855431990
+status: 3
+tags: []
+user_id: sashe

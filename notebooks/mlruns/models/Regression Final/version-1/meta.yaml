@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708854695823
+current_stage: None
+description: null
+last_updated_timestamp: 1708854695823
+name: Regression Final
+run_id: null
+run_link: null
+source: "\\mlruns28188644388487782\x1D9dba9348464fb692f368d1b743f12c"
+status: READY
+status_message: null
+storage_location: "\\mlruns28188644388487782\x1D9dba9348464fb692f368d1b743f12c"
+user_id: null
+version: 1

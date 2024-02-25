@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/740cd1bc8a8947ceb0002f89d4ed4312/artifacts
+end_time: 1708855429716
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: 740cd1bc8a8947ceb0002f89d4ed4312
+run_name: Gradient Boosting Classifier
+run_uuid: 740cd1bc8a8947ceb0002f89d4ed4312
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708855429477
+status: 3
+tags: []
+user_id: sashe

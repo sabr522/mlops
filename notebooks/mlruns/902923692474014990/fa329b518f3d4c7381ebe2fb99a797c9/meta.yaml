@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/fa329b518f3d4c7381ebe2fb99a797c9/artifacts
+end_time: 1708856009785
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: fa329b518f3d4c7381ebe2fb99a797c9
+run_name: Light Gradient Boosting Machine
+run_uuid: fa329b518f3d4c7381ebe2fb99a797c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708856009428
+status: 3
+tags: []
+user_id: sashe

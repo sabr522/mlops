@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import pickle
+import mlflow
 from pycaret.regression import *
 
 def Prediction_sharina(data, amenities):
@@ -9,12 +10,12 @@ def Prediction_sharina(data, amenities):
     columns = ['accommodates', 'availability_30', 'bathrooms', 'bedrooms', 'beds',
        'calculated_host_listings_count', 'cancellation_policy_flexible',
        'cancellation_policy_strict', 'guests_included', 'host_listings_count',
-       'latitude(North)', 'longitude(East)', 'maximum_nights',
-       'number_of_reviews', 'review_scores_communication',
-       'review_scores_rating', 'room_type_Entire home/apt', 'Cable TV',
-       'Carbon Monoxide Detector', 'Doorman', 'Essentials',
-       'Fire Extinguisher', 'First Aid Kit', 'Free Parking on Premises',
-       'Indoor Fireplace', 'Pool', 'Shampoo', 'Smoke Detector',
+       'maximum_nights', 'number_of_reviews', 'review_scores_communication',
+       'review_scores_location', 'review_scores_rating', 'review_scores_value',
+       'room_type_Entire home/apt', 'Cable TV', 'Carbon Monoxide Detector',
+       'Doorman', 'Elevator in Building', 'Family/Kid Friendly',
+       'Fire Extinguisher', 'First Aid Kit', 'Hot Tub', 'Indoor Fireplace',
+       'Pets Allowed', 'Pool', 'Shampoo', 'Smoke Detector',
        'Suitable for Events']
 
     
@@ -39,16 +40,20 @@ def Prediction_sharina(data, amenities):
             df['Carbon Monoxide Detector'][i] = 1
         if 'Doorman' in amenities:
             df['Doorman'][i] = 1
-        if 'Essentials' in amenities:
-            df['Essentials'][i] = 1
+        if 'Elevator' in amenities:
+            df['Elevator in Building'][i] = 1
+        if 'Family' in amenities:
+            df['Family/Kid Friendly'][i] = 1
         if 'Extinguisher' in amenities:
             df['Fire Extinguisher'][i] = 1
         if 'Firstaid' in amenities:
             df['First Aid Kit'][i] = 1
-        if 'Parking' in amenities:
-            df['Free Parking on Premises'][i] = 1
+        if 'Tub' in amenities:
+            df['Hot Tub'][i] = 1
         if 'Fireplace' in amenities:
             df['Indoor Fireplace'][i] = 1
+        if 'Pets' in amenities:
+            df['Pets Allowed'][i] = 1
         if 'Pool' in amenities:
             df['Pool'][i] = 1
         if 'Shampoo' in amenities:

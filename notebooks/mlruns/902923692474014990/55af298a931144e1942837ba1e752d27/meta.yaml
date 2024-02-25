@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/55af298a931144e1942837ba1e752d27/artifacts
+end_time: 1708855432965
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: 55af298a931144e1942837ba1e752d27
+run_name: Ada Boost Classifier
+run_uuid: 55af298a931144e1942837ba1e752d27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708855432758
+status: 3
+tags: []
+user_id: sashe

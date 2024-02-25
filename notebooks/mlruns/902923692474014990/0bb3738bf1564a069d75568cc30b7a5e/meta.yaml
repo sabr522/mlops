@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/0bb3738bf1564a069d75568cc30b7a5e/artifacts
+end_time: 1708855434031
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: 0bb3738bf1564a069d75568cc30b7a5e
+run_name: Dummy Classifier
+run_uuid: 0bb3738bf1564a069d75568cc30b7a5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708855433814
+status: 3
+tags: []
+user_id: sashe

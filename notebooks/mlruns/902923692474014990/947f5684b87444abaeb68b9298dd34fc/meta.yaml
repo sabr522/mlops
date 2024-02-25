@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/sashe/mlops/notebooks/mlruns/902923692474014990/947f5684b87444abaeb68b9298dd34fc/artifacts
+end_time: 1708855433683
+entry_point_name: ''
+experiment_id: '902923692474014990'
+lifecycle_stage: active
+run_id: 947f5684b87444abaeb68b9298dd34fc
+run_name: Linear Discriminant Analysis
+run_uuid: 947f5684b87444abaeb68b9298dd34fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708855433446
+status: 3
+tags: []
+user_id: sashe
