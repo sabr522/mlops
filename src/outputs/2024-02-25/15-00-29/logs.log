@@ -1,0 +1,1818 @@
+2024-02-25 15:00:29,159:INFO:PyCaret RegressionExperiment
+2024-02-25 15:00:29,160:INFO:Logging name: reg-default-name
+2024-02-25 15:00:29,160:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-02-25 15:00:29,160:INFO:version 3.3.0
+2024-02-25 15:00:29,160:INFO:Initializing setup()
+2024-02-25 15:00:29,160:INFO:self.USI: 9675
+2024-02-25 15:00:29,160:INFO:self._variable_keys: {'_ml_usecase', 'USI', 'log_plots_param', 'data', 'exp_name_log', 'X_train', 'gpu_param', 'y_train', 'target_param', 'pipeline', 'fold_generator', 'X_test', 'y', 'exp_id', 'gpu_n_jobs_param', 'y_test', 'fold_groups_param', 'seed', 'X', 'logging_param', 'fold_shuffle_param', 'idx', 'memory', '_available_plots', 'transform_target_param', 'html_param', 'n_jobs_param'}
+2024-02-25 15:00:29,160:INFO:Checking environment
+2024-02-25 15:00:29,160:INFO:python_version: 3.10.13
+2024-02-25 15:00:29,160:INFO:python_build: ('main', 'Sep 11 2023 13:24:38')
+2024-02-25 15:00:29,160:INFO:machine: AMD64
+2024-02-25 15:00:29,160:INFO:platform: Windows-10-10.0.22621-SP0
+2024-02-25 15:00:29,165:INFO:Memory: svmem(total=16952647680, available=4321366016, percent=74.5, used=12631281664, free=4321366016)
+2024-02-25 15:00:29,166:INFO:Physical Core: 4
+2024-02-25 15:00:29,166:INFO:Logical Core: 8
+2024-02-25 15:00:29,166:INFO:Checking libraries
+2024-02-25 15:00:29,166:INFO:System:
+2024-02-25 15:00:29,166:INFO:    python: 3.10.13 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:24:38) [MSC v.1916 64 bit (AMD64)]
+2024-02-25 15:00:29,166:INFO:executable: C:\Users\sashe\anaconda3\envs\mlopsassignment\python.exe
+2024-02-25 15:00:29,166:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-02-25 15:00:29,166:INFO:PyCaret required dependencies:
+2024-02-25 15:00:29,166:INFO:                 pip: 23.3.1
+2024-02-25 15:00:29,166:INFO:          setuptools: 69.1.1
+2024-02-25 15:00:29,166:INFO:             pycaret: 3.3.0
+2024-02-25 15:00:29,166:INFO:             IPython: 8.18.1
+2024-02-25 15:00:29,166:INFO:          ipywidgets: 8.1.2
+2024-02-25 15:00:29,166:INFO:                tqdm: 4.66.2
+2024-02-25 15:00:29,166:INFO:               numpy: 1.26.4
+2024-02-25 15:00:29,166:INFO:              pandas: 2.1.4
+2024-02-25 15:00:29,167:INFO:              jinja2: 3.1.3
+2024-02-25 15:00:29,167:INFO:               scipy: 1.11.4
+2024-02-25 15:00:29,167:INFO:              joblib: 1.3.2
+2024-02-25 15:00:29,167:INFO:             sklearn: 1.4.1.post1
+2024-02-25 15:00:29,167:INFO:                pyod: 1.1.3
+2024-02-25 15:00:29,167:INFO:            imblearn: 0.12.0
+2024-02-25 15:00:29,167:INFO:   category_encoders: 2.6.3
+2024-02-25 15:00:29,167:INFO:            lightgbm: 4.3.0
+2024-02-25 15:00:29,167:INFO:               numba: 0.59.0
+2024-02-25 15:00:29,167:INFO:            requests: 2.31.0
+2024-02-25 15:00:29,167:INFO:          matplotlib: 3.7.5
+2024-02-25 15:00:29,167:INFO:          scikitplot: 0.3.7
+2024-02-25 15:00:29,167:INFO:         yellowbrick: 1.5
+2024-02-25 15:00:29,167:INFO:              plotly: 5.19.0
+2024-02-25 15:00:29,167:INFO:    plotly-resampler: Not installed
+2024-02-25 15:00:29,167:INFO:             kaleido: 0.2.1
+2024-02-25 15:00:29,167:INFO:           schemdraw: 0.15
+2024-02-25 15:00:29,167:INFO:         statsmodels: 0.14.1
+2024-02-25 15:00:29,167:INFO:              sktime: 0.26.0
+2024-02-25 15:00:29,167:INFO:               tbats: 1.1.3
+2024-02-25 15:00:29,167:INFO:            pmdarima: 2.0.4
+2024-02-25 15:00:29,167:INFO:              psutil: 5.9.8
+2024-02-25 15:00:29,167:INFO:          markupsafe: 2.1.5
+2024-02-25 15:00:29,167:INFO:             pickle5: Not installed
+2024-02-25 15:00:29,167:INFO:         cloudpickle: 3.0.0
+2024-02-25 15:00:29,167:INFO:         deprecation: 2.1.0
+2024-02-25 15:00:29,167:INFO:              xxhash: 3.4.1
+2024-02-25 15:00:29,168:INFO:           wurlitzer: Not installed
+2024-02-25 15:00:29,168:INFO:PyCaret optional dependencies:
+2024-02-25 15:00:29,168:INFO:                shap: Not installed
+2024-02-25 15:00:29,168:INFO:           interpret: Not installed
+2024-02-25 15:00:29,168:INFO:                umap: Not installed
+2024-02-25 15:00:29,168:INFO:     ydata_profiling: Not installed
+2024-02-25 15:00:29,168:INFO:  explainerdashboard: Not installed
+2024-02-25 15:00:29,168:INFO:             autoviz: Not installed
+2024-02-25 15:00:29,168:INFO:           fairlearn: Not installed
+2024-02-25 15:00:29,168:INFO:          deepchecks: Not installed
+2024-02-25 15:00:29,168:INFO:             xgboost: Not installed
+2024-02-25 15:00:29,168:INFO:            catboost: Not installed
+2024-02-25 15:00:29,168:INFO:              kmodes: Not installed
+2024-02-25 15:00:29,168:INFO:             mlxtend: Not installed
+2024-02-25 15:00:29,168:INFO:       statsforecast: Not installed
+2024-02-25 15:00:29,168:INFO:        tune_sklearn: Not installed
+2024-02-25 15:00:29,168:INFO:                 ray: Not installed
+2024-02-25 15:00:29,168:INFO:            hyperopt: Not installed
+2024-02-25 15:00:29,168:INFO:              optuna: Not installed
+2024-02-25 15:00:29,168:INFO:               skopt: Not installed
+2024-02-25 15:00:29,168:INFO:              mlflow: 2.10.2
+2024-02-25 15:00:29,168:INFO:              gradio: Not installed
+2024-02-25 15:00:29,168:INFO:             fastapi: Not installed
+2024-02-25 15:00:29,168:INFO:             uvicorn: Not installed
+2024-02-25 15:00:29,168:INFO:              m2cgen: Not installed
+2024-02-25 15:00:29,168:INFO:           evidently: Not installed
+2024-02-25 15:00:29,168:INFO:               fugue: Not installed
+2024-02-25 15:00:29,168:INFO:           streamlit: 1.30.0
+2024-02-25 15:00:29,168:INFO:             prophet: Not installed
+2024-02-25 15:00:29,168:INFO:None
+2024-02-25 15:00:29,168:INFO:Set up data.
+2024-02-25 15:00:29,186:INFO:Set up folding strategy.
+2024-02-25 15:00:29,186:INFO:Set up train/test split.
+2024-02-25 15:00:29,195:INFO:Set up index.
+2024-02-25 15:00:29,196:INFO:Assigning column types.
+2024-02-25 15:00:29,206:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-02-25 15:00:29,207:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,210:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,214:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,261:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,295:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,296:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,296:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,297:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,300:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,303:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,353:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,384:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,385:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,385:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,385:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-02-25 15:00:29,389:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,392:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,441:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,473:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,473:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,473:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,477:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,480:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,529:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,567:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,567:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,568:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,568:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-02-25 15:00:29,575:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,639:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,674:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,675:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,675:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,683:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,733:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,768:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,768:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,768:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,768:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-02-25 15:00:29,834:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,868:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,868:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,869:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,930:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,964:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:29,965:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,965:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:29,965:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-02-25 15:00:30,022:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:30,058:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:30,059:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:30,118:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:30,151:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:30,151:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:30,152:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-02-25 15:00:30,245:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:30,245:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:30,345:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:30,345:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:30,346:INFO:Preparing preprocessing pipeline...
+2024-02-25 15:00:30,346:INFO:Set up simple imputation.
+2024-02-25 15:00:30,352:INFO:Set up encoding of ordinal features.
+2024-02-25 15:00:30,359:INFO:Set up encoding of categorical features.
+2024-02-25 15:00:30,359:INFO:Set up removing multicollinearity.
+2024-02-25 15:00:30,359:INFO:Set up feature selection.
+2024-02-25 15:00:30,466:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:30,467:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:30,472:INFO:Set up column name cleaning.
+2024-02-25 15:00:30,690:INFO:Finished creating preprocessing pipeline.
+2024-02-25 15:00:30,739:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\sashe\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['accommodates', 'availability_30',
+                                             'bathrooms', 'bedrooms', 'beds',
+                                             'calculated_host_listings_count',
+                                             'guests_included',
+                                             'host_listings_count',
+                                             'latitude(North)',
+                                             'longitude(East)',
+                                             'maximum_nights',
+                                             'number_of_reviews',
+                                             'review...
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_multicollinearity',
+                 TransformerWrapper(exclude=[],
+                                    transformer=RemoveMulticollinearity(threshold=0.9))),
+                ('feature_selection',
+                 TransformerWrapper(exclude=[],
+                                    transformer=SelectFromModel(estimator=LGBMRegressor(),
+                                                                max_features=29,
+                                                                threshold=-inf))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2024-02-25 15:00:30,739:INFO:Creating final display dataframe.
+2024-02-25 15:00:31,447:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target             price
+2                   Target type        Regression
+3           Original data shape        (5834, 66)
+4        Transformed data shape        (5834, 30)
+5   Transformed train set shape        (4083, 30)
+6    Transformed test set shape        (1751, 30)
+7              Numeric features                58
+8          Categorical features                 7
+9      Rows with missing values             36.0%
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16     Remove multicollinearity              True
+17  Multicollinearity threshold               0.9
+18            Feature selection              True
+19     Feature selection method           classic
+20  Feature selection estimator          lightgbm
+21  Number of features selected              0.45
+22               Fold Generator             KFold
+23                  Fold Number                10
+24                     CPU Jobs                -1
+25                      Use GPU             False
+26               Log Experiment             False
+27              Experiment Name  reg-default-name
+28                          USI              9675
+2024-02-25 15:00:31,586:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:31,586:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:31,685:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:31,685:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:31,687:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\pycaret\internal\metrics.py:51: FutureWarning: The `needs_threshold` and `needs_proba` parameter are deprecated in version 1.4 and will be removed in 1.6. You can either let `response_method` be `None` or set it to `predict` to preserve the same behaviour.
+  warnings.warn(
+
+2024-02-25 15:00:31,687:INFO:setup() successfully completed in 2.56s...............
+2024-02-25 15:00:31,688:INFO:Initializing get_config()
+2024-02-25 15:00:31,688:INFO:get_config(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028521C8AE90>, variable=dataset_transformed)
+2024-02-25 15:00:31,803:INFO:Variable: dataset returned as       accommodates  availability_30  bathrooms  bedrooms  beds  \
+4239          16.0             30.0        1.0       2.0   2.0   
+3632           7.0              0.0        2.5       3.0   3.0   
+3733           3.0             11.0        1.0       1.0   2.0   
+2908           3.0             30.0        1.0       1.0   1.0   
+2683           2.0              1.0        1.0       0.0   1.0   
+...            ...              ...        ...       ...   ...   
+2906           9.0             30.0        2.0       1.0   9.0   
+2312           1.0              0.0        1.0       1.0   1.0   
+934            2.0             29.0        1.0       1.0   1.0   
+3729           2.0             10.0        1.0       0.0   1.0   
+3360          10.0             30.0        2.0       3.0   1.0   
+
+      calculated_host_listings_count  cancellation_policy_flexible  \
+4239                             3.0                           1.0   
+3632                             1.0                           0.0   
+3733                             2.0                           0.0   
+2908                             1.0                           1.0   
+2683                             1.0                           0.0   
+...                              ...                           ...   
+2906                             5.0                           1.0   
+2312                             3.0                           1.0   
+934                              1.0                           0.0   
+3729                             1.0                           0.0   
+3360                             1.0                           1.0   
+
+      cancellation_policy_strict  guests_included  host_listings_count  ...  \
+4239                         0.0              1.0                  3.0  ...   
+3632                         1.0              1.0                  1.0  ...   
+3733                         0.0              0.0                  2.0  ...   
+2908                         0.0              1.0                  1.0  ...   
+2683                         0.0              2.0                  1.0  ...   
+...                          ...              ...                  ...  ...   
+2906                         0.0              1.0                  5.0  ...   
+2312                         0.0              1.0                 10.0  ...   
+934                          1.0              1.0                  1.0  ...   
+3729                         0.0              2.0                  1.0  ...   
+3360                         0.0              1.0                  1.0  ...   
+
+      Essentials  Fire Extinguisher  First Aid Kit  Free Parking on Premises  \
+4239         0.0                0.0            0.0                       0.0   
+3632         1.0                1.0            0.0                       1.0   
+3733         1.0                0.0            0.0                       1.0   
+2908         1.0                1.0            1.0                       1.0   
+2683         1.0                1.0            1.0                       1.0   
+...          ...                ...            ...                       ...   
+2906         1.0                1.0            1.0                       1.0   
+2312         0.0                1.0            0.0                       1.0   
+934          1.0                1.0            0.0                       1.0   
+3729         1.0                1.0            1.0                       1.0   
+3360         0.0                0.0            0.0                       1.0   
+
+      Indoor Fireplace  Pool  Shampoo  Smoke Detector  Suitable for Events  \
+4239               0.0   0.0      0.0             0.0                  0.0   
+3632               0.0   0.0      0.0             1.0                  0.0   
+3733               0.0   0.0      1.0             0.0                  0.0   
+2908               0.0   1.0      1.0             1.0                  0.0   
+2683               0.0   0.0      0.0             1.0                  0.0   
+...                ...   ...      ...             ...                  ...   
+2906               0.0   0.0      0.0             0.0                  1.0   
+2312               0.0   0.0      0.0             1.0                  0.0   
+934                0.0   1.0      0.0             1.0                  0.0   
+3729               0.0   0.0      1.0             1.0                  0.0   
+3360               1.0   0.0      0.0             0.0                  0.0   
+
+      price  
+4239  450.0  
+3632  480.0  
+3733  150.0  
+2908  150.0  
+2683   95.0  
+...     ...  
+2906   25.0  
+2312   23.0  
+934   125.0  
+3729   90.0  
+3360  750.0  
+
+[5834 rows x 30 columns]
+2024-02-25 15:00:31,803:INFO:get_config() successfully completed......................................
+2024-02-25 15:00:31,840:INFO:PyCaret RegressionExperiment
+2024-02-25 15:00:31,840:INFO:Logging name: reg-default-name
+2024-02-25 15:00:31,840:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-02-25 15:00:31,840:INFO:version 3.3.0
+2024-02-25 15:00:31,840:INFO:Initializing setup()
+2024-02-25 15:00:31,840:INFO:self.USI: 201c
+2024-02-25 15:00:31,840:INFO:self._variable_keys: {'_ml_usecase', 'USI', 'log_plots_param', 'data', 'exp_name_log', 'X_train', 'gpu_param', 'y_train', 'target_param', 'pipeline', 'fold_generator', 'X_test', 'y', 'exp_id', 'gpu_n_jobs_param', 'y_test', 'fold_groups_param', 'seed', 'X', 'logging_param', 'fold_shuffle_param', 'idx', 'memory', '_available_plots', 'transform_target_param', 'html_param', 'n_jobs_param'}
+2024-02-25 15:00:31,840:INFO:Checking environment
+2024-02-25 15:00:31,840:INFO:python_version: 3.10.13
+2024-02-25 15:00:31,840:INFO:python_build: ('main', 'Sep 11 2023 13:24:38')
+2024-02-25 15:00:31,840:INFO:machine: AMD64
+2024-02-25 15:00:31,840:INFO:platform: Windows-10-10.0.22621-SP0
+2024-02-25 15:00:31,845:INFO:Memory: svmem(total=16952647680, available=4313280512, percent=74.6, used=12639367168, free=4313280512)
+2024-02-25 15:00:31,845:INFO:Physical Core: 4
+2024-02-25 15:00:31,845:INFO:Logical Core: 8
+2024-02-25 15:00:31,845:INFO:Checking libraries
+2024-02-25 15:00:31,845:INFO:System:
+2024-02-25 15:00:31,845:INFO:    python: 3.10.13 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:24:38) [MSC v.1916 64 bit (AMD64)]
+2024-02-25 15:00:31,845:INFO:executable: C:\Users\sashe\anaconda3\envs\mlopsassignment\python.exe
+2024-02-25 15:00:31,845:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-02-25 15:00:31,845:INFO:PyCaret required dependencies:
+2024-02-25 15:00:31,845:INFO:                 pip: 23.3.1
+2024-02-25 15:00:31,845:INFO:          setuptools: 69.1.1
+2024-02-25 15:00:31,845:INFO:             pycaret: 3.3.0
+2024-02-25 15:00:31,845:INFO:             IPython: 8.18.1
+2024-02-25 15:00:31,845:INFO:          ipywidgets: 8.1.2
+2024-02-25 15:00:31,846:INFO:                tqdm: 4.66.2
+2024-02-25 15:00:31,846:INFO:               numpy: 1.26.4
+2024-02-25 15:00:31,846:INFO:              pandas: 2.1.4
+2024-02-25 15:00:31,846:INFO:              jinja2: 3.1.3
+2024-02-25 15:00:31,846:INFO:               scipy: 1.11.4
+2024-02-25 15:00:31,846:INFO:              joblib: 1.3.2
+2024-02-25 15:00:31,846:INFO:             sklearn: 1.4.1.post1
+2024-02-25 15:00:31,846:INFO:                pyod: 1.1.3
+2024-02-25 15:00:31,846:INFO:            imblearn: 0.12.0
+2024-02-25 15:00:31,846:INFO:   category_encoders: 2.6.3
+2024-02-25 15:00:31,846:INFO:            lightgbm: 4.3.0
+2024-02-25 15:00:31,846:INFO:               numba: 0.59.0
+2024-02-25 15:00:31,846:INFO:            requests: 2.31.0
+2024-02-25 15:00:31,846:INFO:          matplotlib: 3.7.5
+2024-02-25 15:00:31,846:INFO:          scikitplot: 0.3.7
+2024-02-25 15:00:31,846:INFO:         yellowbrick: 1.5
+2024-02-25 15:00:31,846:INFO:              plotly: 5.19.0
+2024-02-25 15:00:31,846:INFO:    plotly-resampler: Not installed
+2024-02-25 15:00:31,846:INFO:             kaleido: 0.2.1
+2024-02-25 15:00:31,846:INFO:           schemdraw: 0.15
+2024-02-25 15:00:31,846:INFO:         statsmodels: 0.14.1
+2024-02-25 15:00:31,846:INFO:              sktime: 0.26.0
+2024-02-25 15:00:31,847:INFO:               tbats: 1.1.3
+2024-02-25 15:00:31,847:INFO:            pmdarima: 2.0.4
+2024-02-25 15:00:31,847:INFO:              psutil: 5.9.8
+2024-02-25 15:00:31,847:INFO:          markupsafe: 2.1.5
+2024-02-25 15:00:31,847:INFO:             pickle5: Not installed
+2024-02-25 15:00:31,847:INFO:         cloudpickle: 3.0.0
+2024-02-25 15:00:31,847:INFO:         deprecation: 2.1.0
+2024-02-25 15:00:31,847:INFO:              xxhash: 3.4.1
+2024-02-25 15:00:31,847:INFO:           wurlitzer: Not installed
+2024-02-25 15:00:31,847:INFO:PyCaret optional dependencies:
+2024-02-25 15:00:31,847:INFO:                shap: Not installed
+2024-02-25 15:00:31,847:INFO:           interpret: Not installed
+2024-02-25 15:00:31,847:INFO:                umap: Not installed
+2024-02-25 15:00:31,847:INFO:     ydata_profiling: Not installed
+2024-02-25 15:00:31,847:INFO:  explainerdashboard: Not installed
+2024-02-25 15:00:31,847:INFO:             autoviz: Not installed
+2024-02-25 15:00:31,847:INFO:           fairlearn: Not installed
+2024-02-25 15:00:31,847:INFO:          deepchecks: Not installed
+2024-02-25 15:00:31,847:INFO:             xgboost: Not installed
+2024-02-25 15:00:31,847:INFO:            catboost: Not installed
+2024-02-25 15:00:31,847:INFO:              kmodes: Not installed
+2024-02-25 15:00:31,847:INFO:             mlxtend: Not installed
+2024-02-25 15:00:31,847:INFO:       statsforecast: Not installed
+2024-02-25 15:00:31,848:INFO:        tune_sklearn: Not installed
+2024-02-25 15:00:31,848:INFO:                 ray: Not installed
+2024-02-25 15:00:31,848:INFO:            hyperopt: Not installed
+2024-02-25 15:00:31,848:INFO:              optuna: Not installed
+2024-02-25 15:00:31,848:INFO:               skopt: Not installed
+2024-02-25 15:00:31,848:INFO:              mlflow: 2.10.2
+2024-02-25 15:00:31,848:INFO:              gradio: Not installed
+2024-02-25 15:00:31,848:INFO:             fastapi: Not installed
+2024-02-25 15:00:31,848:INFO:             uvicorn: Not installed
+2024-02-25 15:00:31,848:INFO:              m2cgen: Not installed
+2024-02-25 15:00:31,848:INFO:           evidently: Not installed
+2024-02-25 15:00:31,848:INFO:               fugue: Not installed
+2024-02-25 15:00:31,848:INFO:           streamlit: 1.30.0
+2024-02-25 15:00:31,848:INFO:             prophet: Not installed
+2024-02-25 15:00:31,848:INFO:None
+2024-02-25 15:00:31,848:INFO:Set up data.
+2024-02-25 15:00:31,859:INFO:Set up folding strategy.
+2024-02-25 15:00:31,860:INFO:Set up train/test split.
+2024-02-25 15:00:31,867:INFO:Set up index.
+2024-02-25 15:00:31,868:INFO:Assigning column types.
+2024-02-25 15:00:31,876:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-02-25 15:00:31,876:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-02-25 15:00:31,882:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-25 15:00:31,888:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:31,953:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:31,991:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:31,992:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:31,992:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:31,992:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-02-25 15:00:31,995:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-25 15:00:31,999:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,044:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,083:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,084:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,084:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,084:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-02-25 15:00:32,088:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,091:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,151:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,190:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,190:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,190:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,194:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,197:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,248:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,284:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,285:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,285:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,286:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-02-25 15:00:32,296:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,373:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,428:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,429:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,429:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,439:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,482:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,516:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,516:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,517:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,517:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-02-25 15:00:32,593:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,642:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,643:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,643:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,705:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,740:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,741:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,741:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,741:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-02-25 15:00:32,796:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,833:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,834:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,893:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-02-25 15:00:32,932:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,932:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:32,932:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-02-25 15:00:33,041:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:33,041:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:33,128:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:33,128:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:33,129:INFO:Preparing preprocessing pipeline...
+2024-02-25 15:00:33,129:INFO:Set up target transformation.
+2024-02-25 15:00:33,129:INFO:Set up simple imputation.
+2024-02-25 15:00:33,130:INFO:Set up column name cleaning.
+2024-02-25 15:00:33,147:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:33,180:INFO:Finished creating preprocessing pipeline.
+2024-02-25 15:00:33,186:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\sashe\AppData\Local\Temp\joblib),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['accommodates', 'availability_30',
+                                             'bathrooms', 'bedrooms', 'beds',
+                                             'calculated_host_li...
+                                             'Doorman', 'Essentials',
+                                             'Fire Extinguisher',
+                                             'First Aid Kit',
+                                             'Free Parking on Premises',
+                                             'Indoor Fireplace', 'Pool',
+                                             'Shampoo', 'Smoke Detector',
+                                             'Suitable for Events'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2024-02-25 15:00:33,186:INFO:Creating final display dataframe.
+2024-02-25 15:00:33,306:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target             price
+2                   Target type        Regression
+3           Original data shape        (5834, 30)
+4        Transformed data shape        (5834, 30)
+5   Transformed train set shape        (4083, 30)
+6    Transformed test set shape        (1751, 30)
+7              Numeric features                29
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12             Transform target              True
+13      Transform target method       yeo-johnson
+14               Fold Generator             KFold
+15                  Fold Number                10
+16                     CPU Jobs                -1
+17                      Use GPU             False
+18               Log Experiment             False
+19              Experiment Name  reg-default-name
+20                          USI              201c
+2024-02-25 15:00:33,414:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:33,415:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:33,498:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:33,499:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-25 15:00:33,499:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\pycaret\internal\metrics.py:51: FutureWarning: The `needs_threshold` and `needs_proba` parameter are deprecated in version 1.4 and will be removed in 1.6. You can either let `response_method` be `None` or set it to `predict` to preserve the same behaviour.
+  warnings.warn(
+
+2024-02-25 15:00:33,500:INFO:setup() successfully completed in 1.7s...............
+2024-02-25 15:00:33,535:INFO:Initializing compare_models()
+2024-02-25 15:00:33,535:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, include=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-02-25 15:00:33,535:INFO:Checking exceptions
+2024-02-25 15:00:33,539:INFO:Preparing display monitor
+2024-02-25 15:00:33,568:INFO:Initializing Linear Regression
+2024-02-25 15:00:33,568:INFO:Total runtime is 0.0 minutes
+2024-02-25 15:00:33,570:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:33,571:INFO:Initializing create_model()
+2024-02-25 15:00:33,571:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:33,571:INFO:Checking exceptions
+2024-02-25 15:00:33,571:INFO:Importing libraries
+2024-02-25 15:00:33,571:INFO:Copying training dataset
+2024-02-25 15:00:33,584:INFO:Defining folds
+2024-02-25 15:00:33,584:INFO:Declaring metric variables
+2024-02-25 15:00:33,588:INFO:Importing untrained model
+2024-02-25 15:00:33,591:INFO:Linear Regression Imported successfully
+2024-02-25 15:00:33,598:INFO:Starting cross validation
+2024-02-25 15:00:33,629:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:39,691:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:39,703:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:39,734:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:39,740:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:39,749:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:39,752:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:39,965:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:39,966:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:39,976:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,024:INFO:Calculating mean and std
+2024-02-25 15:00:40,025:INFO:Creating metrics dataframe
+2024-02-25 15:00:40,026:INFO:Uploading results into container
+2024-02-25 15:00:40,027:INFO:Uploading model into container now
+2024-02-25 15:00:40,027:INFO:_master_model_container: 1
+2024-02-25 15:00:40,027:INFO:_display_container: 2
+2024-02-25 15:00:40,028:INFO:LinearRegression(n_jobs=-1)
+2024-02-25 15:00:40,028:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:40,220:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:40,220:INFO:Creating metrics dataframe
+2024-02-25 15:00:40,228:INFO:Initializing Lasso Regression
+2024-02-25 15:00:40,228:INFO:Total runtime is 0.11101016998291016 minutes
+2024-02-25 15:00:40,231:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:40,232:INFO:Initializing create_model()
+2024-02-25 15:00:40,232:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:40,232:INFO:Checking exceptions
+2024-02-25 15:00:40,232:INFO:Importing libraries
+2024-02-25 15:00:40,232:INFO:Copying training dataset
+2024-02-25 15:00:40,243:INFO:Defining folds
+2024-02-25 15:00:40,243:INFO:Declaring metric variables
+2024-02-25 15:00:40,248:INFO:Importing untrained model
+2024-02-25 15:00:40,253:INFO:Lasso Regression Imported successfully
+2024-02-25 15:00:40,260:INFO:Starting cross validation
+2024-02-25 15:00:40,262:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:40,283:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,290:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,298:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,302:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,304:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,322:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,333:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,345:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,353:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,382:INFO:Calculating mean and std
+2024-02-25 15:00:40,383:INFO:Creating metrics dataframe
+2024-02-25 15:00:40,384:INFO:Uploading results into container
+2024-02-25 15:00:40,385:INFO:Uploading model into container now
+2024-02-25 15:00:40,385:INFO:_master_model_container: 2
+2024-02-25 15:00:40,385:INFO:_display_container: 2
+2024-02-25 15:00:40,386:INFO:Lasso(random_state=123)
+2024-02-25 15:00:40,386:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:40,535:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:40,535:INFO:Creating metrics dataframe
+2024-02-25 15:00:40,543:INFO:Initializing Ridge Regression
+2024-02-25 15:00:40,544:INFO:Total runtime is 0.11626929044723511 minutes
+2024-02-25 15:00:40,548:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:40,548:INFO:Initializing create_model()
+2024-02-25 15:00:40,548:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:40,548:INFO:Checking exceptions
+2024-02-25 15:00:40,548:INFO:Importing libraries
+2024-02-25 15:00:40,548:INFO:Copying training dataset
+2024-02-25 15:00:40,559:INFO:Defining folds
+2024-02-25 15:00:40,559:INFO:Declaring metric variables
+2024-02-25 15:00:40,565:INFO:Importing untrained model
+2024-02-25 15:00:40,568:INFO:Ridge Regression Imported successfully
+2024-02-25 15:00:40,575:INFO:Starting cross validation
+2024-02-25 15:00:40,577:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:40,599:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,604:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,610:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,614:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,622:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,627:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=4.82223e-09): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2024-02-25 15:00:40,630:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=5.04349e-09): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2024-02-25 15:00:40,639:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=4.75559e-09): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2024-02-25 15:00:40,639:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=4.80512e-09): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2024-02-25 15:00:40,640:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,647:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=4.83858e-09): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2024-02-25 15:00:40,649:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,655:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=4.74797e-09): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2024-02-25 15:00:40,657:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,666:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=4.77888e-09): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2024-02-25 15:00:40,669:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,676:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=4.83913e-09): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2024-02-25 15:00:40,676:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=5.07595e-09): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2024-02-25 15:00:40,691:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=4.70687e-09): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2024-02-25 15:00:40,711:INFO:Calculating mean and std
+2024-02-25 15:00:40,712:INFO:Creating metrics dataframe
+2024-02-25 15:00:40,713:INFO:Uploading results into container
+2024-02-25 15:00:40,713:INFO:Uploading model into container now
+2024-02-25 15:00:40,715:INFO:_master_model_container: 3
+2024-02-25 15:00:40,715:INFO:_display_container: 2
+2024-02-25 15:00:40,716:INFO:Ridge(random_state=123)
+2024-02-25 15:00:40,716:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:40,844:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:40,844:INFO:Creating metrics dataframe
+2024-02-25 15:00:40,849:INFO:Initializing Elastic Net
+2024-02-25 15:00:40,850:INFO:Total runtime is 0.12136641740798951 minutes
+2024-02-25 15:00:40,853:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:40,853:INFO:Initializing create_model()
+2024-02-25 15:00:40,854:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:40,854:INFO:Checking exceptions
+2024-02-25 15:00:40,854:INFO:Importing libraries
+2024-02-25 15:00:40,854:INFO:Copying training dataset
+2024-02-25 15:00:40,863:INFO:Defining folds
+2024-02-25 15:00:40,863:INFO:Declaring metric variables
+2024-02-25 15:00:40,868:INFO:Importing untrained model
+2024-02-25 15:00:40,872:INFO:Elastic Net Imported successfully
+2024-02-25 15:00:40,878:INFO:Starting cross validation
+2024-02-25 15:00:40,880:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:40,899:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,903:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,908:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,917:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,925:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,942:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,950:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,954:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:40,963:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,006:INFO:Calculating mean and std
+2024-02-25 15:00:41,007:INFO:Creating metrics dataframe
+2024-02-25 15:00:41,009:INFO:Uploading results into container
+2024-02-25 15:00:41,009:INFO:Uploading model into container now
+2024-02-25 15:00:41,010:INFO:_master_model_container: 4
+2024-02-25 15:00:41,010:INFO:_display_container: 2
+2024-02-25 15:00:41,010:INFO:ElasticNet(random_state=123)
+2024-02-25 15:00:41,010:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:41,156:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:41,156:INFO:Creating metrics dataframe
+2024-02-25 15:00:41,162:INFO:Initializing Least Angle Regression
+2024-02-25 15:00:41,162:INFO:Total runtime is 0.12657695611317954 minutes
+2024-02-25 15:00:41,164:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:41,165:INFO:Initializing create_model()
+2024-02-25 15:00:41,165:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:41,165:INFO:Checking exceptions
+2024-02-25 15:00:41,165:INFO:Importing libraries
+2024-02-25 15:00:41,165:INFO:Copying training dataset
+2024-02-25 15:00:41,177:INFO:Defining folds
+2024-02-25 15:00:41,177:INFO:Declaring metric variables
+2024-02-25 15:00:41,181:INFO:Importing untrained model
+2024-02-25 15:00:41,185:INFO:Least Angle Regression Imported successfully
+2024-02-25 15:00:41,193:INFO:Starting cross validation
+2024-02-25 15:00:41,195:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:41,214:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,224:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,229:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,237:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,247:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,259:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,268:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,274:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,285:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,322:INFO:Calculating mean and std
+2024-02-25 15:00:41,323:INFO:Creating metrics dataframe
+2024-02-25 15:00:41,324:INFO:Uploading results into container
+2024-02-25 15:00:41,325:INFO:Uploading model into container now
+2024-02-25 15:00:41,325:INFO:_master_model_container: 5
+2024-02-25 15:00:41,325:INFO:_display_container: 2
+2024-02-25 15:00:41,325:INFO:Lars(random_state=123)
+2024-02-25 15:00:41,325:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:41,452:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:41,452:INFO:Creating metrics dataframe
+2024-02-25 15:00:41,458:INFO:Initializing Lasso Least Angle Regression
+2024-02-25 15:00:41,458:INFO:Total runtime is 0.13150261640548708 minutes
+2024-02-25 15:00:41,461:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:41,461:INFO:Initializing create_model()
+2024-02-25 15:00:41,461:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:41,461:INFO:Checking exceptions
+2024-02-25 15:00:41,461:INFO:Importing libraries
+2024-02-25 15:00:41,461:INFO:Copying training dataset
+2024-02-25 15:00:41,474:INFO:Defining folds
+2024-02-25 15:00:41,474:INFO:Declaring metric variables
+2024-02-25 15:00:41,477:INFO:Importing untrained model
+2024-02-25 15:00:41,480:INFO:Lasso Least Angle Regression Imported successfully
+2024-02-25 15:00:41,488:INFO:Starting cross validation
+2024-02-25 15:00:41,489:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:41,510:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,514:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,518:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,525:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,530:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,545:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,562:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,570:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,578:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,619:INFO:Calculating mean and std
+2024-02-25 15:00:41,620:INFO:Creating metrics dataframe
+2024-02-25 15:00:41,621:INFO:Uploading results into container
+2024-02-25 15:00:41,621:INFO:Uploading model into container now
+2024-02-25 15:00:41,622:INFO:_master_model_container: 6
+2024-02-25 15:00:41,622:INFO:_display_container: 2
+2024-02-25 15:00:41,622:INFO:LassoLars(random_state=123)
+2024-02-25 15:00:41,622:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:41,763:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:41,763:INFO:Creating metrics dataframe
+2024-02-25 15:00:41,773:INFO:Initializing Orthogonal Matching Pursuit
+2024-02-25 15:00:41,773:INFO:Total runtime is 0.13674647808074952 minutes
+2024-02-25 15:00:41,777:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:41,777:INFO:Initializing create_model()
+2024-02-25 15:00:41,777:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:41,777:INFO:Checking exceptions
+2024-02-25 15:00:41,777:INFO:Importing libraries
+2024-02-25 15:00:41,777:INFO:Copying training dataset
+2024-02-25 15:00:41,786:INFO:Defining folds
+2024-02-25 15:00:41,786:INFO:Declaring metric variables
+2024-02-25 15:00:41,789:INFO:Importing untrained model
+2024-02-25 15:00:41,795:INFO:Orthogonal Matching Pursuit Imported successfully
+2024-02-25 15:00:41,801:INFO:Starting cross validation
+2024-02-25 15:00:41,802:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:41,822:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,826:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,832:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,838:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,847:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,863:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,871:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,879:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,887:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:41,928:INFO:Calculating mean and std
+2024-02-25 15:00:41,929:INFO:Creating metrics dataframe
+2024-02-25 15:00:41,931:INFO:Uploading results into container
+2024-02-25 15:00:41,931:INFO:Uploading model into container now
+2024-02-25 15:00:41,932:INFO:_master_model_container: 7
+2024-02-25 15:00:41,932:INFO:_display_container: 2
+2024-02-25 15:00:41,932:INFO:OrthogonalMatchingPursuit()
+2024-02-25 15:00:41,932:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:42,079:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:42,079:INFO:Creating metrics dataframe
+2024-02-25 15:00:42,087:INFO:Initializing Bayesian Ridge
+2024-02-25 15:00:42,087:INFO:Total runtime is 0.1419905742009481 minutes
+2024-02-25 15:00:42,091:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:42,092:INFO:Initializing create_model()
+2024-02-25 15:00:42,092:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:42,092:INFO:Checking exceptions
+2024-02-25 15:00:42,092:INFO:Importing libraries
+2024-02-25 15:00:42,092:INFO:Copying training dataset
+2024-02-25 15:00:42,100:INFO:Defining folds
+2024-02-25 15:00:42,100:INFO:Declaring metric variables
+2024-02-25 15:00:42,103:INFO:Importing untrained model
+2024-02-25 15:00:42,109:INFO:Bayesian Ridge Imported successfully
+2024-02-25 15:00:42,117:INFO:Starting cross validation
+2024-02-25 15:00:42,118:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:42,138:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,143:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,149:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,153:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,158:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,175:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,186:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,199:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,205:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,241:INFO:Calculating mean and std
+2024-02-25 15:00:42,242:INFO:Creating metrics dataframe
+2024-02-25 15:00:42,244:INFO:Uploading results into container
+2024-02-25 15:00:42,244:INFO:Uploading model into container now
+2024-02-25 15:00:42,245:INFO:_master_model_container: 8
+2024-02-25 15:00:42,245:INFO:_display_container: 2
+2024-02-25 15:00:42,245:INFO:BayesianRidge()
+2024-02-25 15:00:42,245:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:42,377:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:42,377:INFO:Creating metrics dataframe
+2024-02-25 15:00:42,384:INFO:Initializing Passive Aggressive Regressor
+2024-02-25 15:00:42,384:INFO:Total runtime is 0.14694351355234783 minutes
+2024-02-25 15:00:42,388:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:42,389:INFO:Initializing create_model()
+2024-02-25 15:00:42,389:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:42,389:INFO:Checking exceptions
+2024-02-25 15:00:42,389:INFO:Importing libraries
+2024-02-25 15:00:42,389:INFO:Copying training dataset
+2024-02-25 15:00:42,399:INFO:Defining folds
+2024-02-25 15:00:42,399:INFO:Declaring metric variables
+2024-02-25 15:00:42,402:INFO:Importing untrained model
+2024-02-25 15:00:42,405:INFO:Passive Aggressive Regressor Imported successfully
+2024-02-25 15:00:42,412:INFO:Starting cross validation
+2024-02-25 15:00:42,414:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:42,443:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,449:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,457:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,466:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,473:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,497:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,510:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,518:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,529:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,567:INFO:Calculating mean and std
+2024-02-25 15:00:42,569:INFO:Creating metrics dataframe
+2024-02-25 15:00:42,571:INFO:Uploading results into container
+2024-02-25 15:00:42,572:INFO:Uploading model into container now
+2024-02-25 15:00:42,572:INFO:_master_model_container: 9
+2024-02-25 15:00:42,573:INFO:_display_container: 2
+2024-02-25 15:00:42,573:INFO:PassiveAggressiveRegressor(random_state=123)
+2024-02-25 15:00:42,573:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:42,709:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:42,709:INFO:Creating metrics dataframe
+2024-02-25 15:00:42,716:INFO:Initializing Huber Regressor
+2024-02-25 15:00:42,717:INFO:Total runtime is 0.15248791774113973 minutes
+2024-02-25 15:00:42,719:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:42,720:INFO:Initializing create_model()
+2024-02-25 15:00:42,720:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:42,720:INFO:Checking exceptions
+2024-02-25 15:00:42,720:INFO:Importing libraries
+2024-02-25 15:00:42,720:INFO:Copying training dataset
+2024-02-25 15:00:42,731:INFO:Defining folds
+2024-02-25 15:00:42,731:INFO:Declaring metric variables
+2024-02-25 15:00:42,734:INFO:Importing untrained model
+2024-02-25 15:00:42,738:INFO:Huber Regressor Imported successfully
+2024-02-25 15:00:42,745:INFO:Starting cross validation
+2024-02-25 15:00:42,747:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:42,773:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,778:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,784:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,793:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,801:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,821:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,843:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:42,954:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-02-25 15:00:42,983:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-02-25 15:00:42,994:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-02-25 15:00:42,999:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,004:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-02-25 15:00:43,014:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,019:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-02-25 15:00:43,027:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-02-25 15:00:43,031:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-02-25 15:00:43,055:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-02-25 15:00:43,115:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-02-25 15:00:43,119:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\sklearn\linear_model\_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2024-02-25 15:00:43,144:INFO:Calculating mean and std
+2024-02-25 15:00:43,146:INFO:Creating metrics dataframe
+2024-02-25 15:00:43,147:INFO:Uploading results into container
+2024-02-25 15:00:43,148:INFO:Uploading model into container now
+2024-02-25 15:00:43,148:INFO:_master_model_container: 10
+2024-02-25 15:00:43,148:INFO:_display_container: 2
+2024-02-25 15:00:43,149:INFO:HuberRegressor()
+2024-02-25 15:00:43,149:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:43,275:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:43,275:INFO:Creating metrics dataframe
+2024-02-25 15:00:43,280:INFO:Initializing K Neighbors Regressor
+2024-02-25 15:00:43,281:INFO:Total runtime is 0.1618743101755778 minutes
+2024-02-25 15:00:43,283:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:43,284:INFO:Initializing create_model()
+2024-02-25 15:00:43,284:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:43,284:INFO:Checking exceptions
+2024-02-25 15:00:43,284:INFO:Importing libraries
+2024-02-25 15:00:43,284:INFO:Copying training dataset
+2024-02-25 15:00:43,292:INFO:Defining folds
+2024-02-25 15:00:43,293:INFO:Declaring metric variables
+2024-02-25 15:00:43,296:INFO:Importing untrained model
+2024-02-25 15:00:43,299:INFO:K Neighbors Regressor Imported successfully
+2024-02-25 15:00:43,305:INFO:Starting cross validation
+2024-02-25 15:00:43,307:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:43,325:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,329:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,334:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,341:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,350:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,363:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,371:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,474:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,480:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,520:INFO:Calculating mean and std
+2024-02-25 15:00:43,521:INFO:Creating metrics dataframe
+2024-02-25 15:00:43,523:INFO:Uploading results into container
+2024-02-25 15:00:43,523:INFO:Uploading model into container now
+2024-02-25 15:00:43,523:INFO:_master_model_container: 11
+2024-02-25 15:00:43,523:INFO:_display_container: 2
+2024-02-25 15:00:43,525:INFO:KNeighborsRegressor(n_jobs=-1)
+2024-02-25 15:00:43,525:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:43,656:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:43,656:INFO:Creating metrics dataframe
+2024-02-25 15:00:43,663:INFO:Initializing Decision Tree Regressor
+2024-02-25 15:00:43,663:INFO:Total runtime is 0.16825105746587118 minutes
+2024-02-25 15:00:43,667:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:43,667:INFO:Initializing create_model()
+2024-02-25 15:00:43,667:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:43,667:INFO:Checking exceptions
+2024-02-25 15:00:43,667:INFO:Importing libraries
+2024-02-25 15:00:43,667:INFO:Copying training dataset
+2024-02-25 15:00:43,676:INFO:Defining folds
+2024-02-25 15:00:43,676:INFO:Declaring metric variables
+2024-02-25 15:00:43,679:INFO:Importing untrained model
+2024-02-25 15:00:43,684:INFO:Decision Tree Regressor Imported successfully
+2024-02-25 15:00:43,692:INFO:Starting cross validation
+2024-02-25 15:00:43,693:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:43,715:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,719:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,725:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,729:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,736:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,753:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,765:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,806:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,814:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:43,893:INFO:Calculating mean and std
+2024-02-25 15:00:43,894:INFO:Creating metrics dataframe
+2024-02-25 15:00:43,896:INFO:Uploading results into container
+2024-02-25 15:00:43,897:INFO:Uploading model into container now
+2024-02-25 15:00:43,897:INFO:_master_model_container: 12
+2024-02-25 15:00:43,897:INFO:_display_container: 2
+2024-02-25 15:00:43,897:INFO:DecisionTreeRegressor(random_state=123)
+2024-02-25 15:00:43,897:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:44,029:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:44,029:INFO:Creating metrics dataframe
+2024-02-25 15:00:44,041:INFO:Initializing Random Forest Regressor
+2024-02-25 15:00:44,041:INFO:Total runtime is 0.17455978790918986 minutes
+2024-02-25 15:00:44,044:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:44,045:INFO:Initializing create_model()
+2024-02-25 15:00:44,045:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:44,045:INFO:Checking exceptions
+2024-02-25 15:00:44,045:INFO:Importing libraries
+2024-02-25 15:00:44,045:INFO:Copying training dataset
+2024-02-25 15:00:44,057:INFO:Defining folds
+2024-02-25 15:00:44,057:INFO:Declaring metric variables
+2024-02-25 15:00:44,061:INFO:Importing untrained model
+2024-02-25 15:00:44,064:INFO:Random Forest Regressor Imported successfully
+2024-02-25 15:00:44,071:INFO:Starting cross validation
+2024-02-25 15:00:44,072:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:44,095:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:44,103:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:44,107:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:44,113:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:44,122:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:44,138:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:44,149:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:48,956:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:48,968:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:49,947:INFO:Calculating mean and std
+2024-02-25 15:00:49,948:INFO:Creating metrics dataframe
+2024-02-25 15:00:49,951:INFO:Uploading results into container
+2024-02-25 15:00:49,951:INFO:Uploading model into container now
+2024-02-25 15:00:49,951:INFO:_master_model_container: 13
+2024-02-25 15:00:49,952:INFO:_display_container: 2
+2024-02-25 15:00:49,952:INFO:RandomForestRegressor(n_jobs=-1, random_state=123)
+2024-02-25 15:00:49,952:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:50,118:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:50,119:INFO:Creating metrics dataframe
+2024-02-25 15:00:50,129:INFO:Initializing Extra Trees Regressor
+2024-02-25 15:00:50,129:INFO:Total runtime is 0.2760162830352783 minutes
+2024-02-25 15:00:50,133:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:50,134:INFO:Initializing create_model()
+2024-02-25 15:00:50,134:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:50,134:INFO:Checking exceptions
+2024-02-25 15:00:50,134:INFO:Importing libraries
+2024-02-25 15:00:50,134:INFO:Copying training dataset
+2024-02-25 15:00:50,148:INFO:Defining folds
+2024-02-25 15:00:50,149:INFO:Declaring metric variables
+2024-02-25 15:00:50,152:INFO:Importing untrained model
+2024-02-25 15:00:50,156:INFO:Extra Trees Regressor Imported successfully
+2024-02-25 15:00:50,163:INFO:Starting cross validation
+2024-02-25 15:00:50,165:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:50,186:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:50,194:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:50,199:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:50,210:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:50,215:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:50,231:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:50,239:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:53,065:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:53,075:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:53,890:INFO:Calculating mean and std
+2024-02-25 15:00:53,891:INFO:Creating metrics dataframe
+2024-02-25 15:00:53,893:INFO:Uploading results into container
+2024-02-25 15:00:53,893:INFO:Uploading model into container now
+2024-02-25 15:00:53,893:INFO:_master_model_container: 14
+2024-02-25 15:00:53,893:INFO:_display_container: 2
+2024-02-25 15:00:53,894:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2024-02-25 15:00:53,894:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:54,037:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:54,037:INFO:Creating metrics dataframe
+2024-02-25 15:00:54,045:INFO:Initializing AdaBoost Regressor
+2024-02-25 15:00:54,045:INFO:Total runtime is 0.3412924488385518 minutes
+2024-02-25 15:00:54,049:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:54,049:INFO:Initializing create_model()
+2024-02-25 15:00:54,049:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:54,049:INFO:Checking exceptions
+2024-02-25 15:00:54,050:INFO:Importing libraries
+2024-02-25 15:00:54,050:INFO:Copying training dataset
+2024-02-25 15:00:54,059:INFO:Defining folds
+2024-02-25 15:00:54,060:INFO:Declaring metric variables
+2024-02-25 15:00:54,064:INFO:Importing untrained model
+2024-02-25 15:00:54,068:INFO:AdaBoost Regressor Imported successfully
+2024-02-25 15:00:54,075:INFO:Starting cross validation
+2024-02-25 15:00:54,076:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:54,096:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:54,103:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:54,104:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:54,112:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:54,116:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:54,131:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:54,144:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:54,501:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:54,529:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:54,847:INFO:Calculating mean and std
+2024-02-25 15:00:54,848:INFO:Creating metrics dataframe
+2024-02-25 15:00:54,850:INFO:Uploading results into container
+2024-02-25 15:00:54,851:INFO:Uploading model into container now
+2024-02-25 15:00:54,851:INFO:_master_model_container: 15
+2024-02-25 15:00:54,851:INFO:_display_container: 2
+2024-02-25 15:00:54,852:INFO:AdaBoostRegressor(random_state=123)
+2024-02-25 15:00:54,852:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:54,987:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:54,987:INFO:Creating metrics dataframe
+2024-02-25 15:00:54,996:INFO:Initializing Gradient Boosting Regressor
+2024-02-25 15:00:54,997:INFO:Total runtime is 0.3571544011433919 minutes
+2024-02-25 15:00:55,001:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:55,001:INFO:Initializing create_model()
+2024-02-25 15:00:55,001:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:55,001:INFO:Checking exceptions
+2024-02-25 15:00:55,002:INFO:Importing libraries
+2024-02-25 15:00:55,002:INFO:Copying training dataset
+2024-02-25 15:00:55,012:INFO:Defining folds
+2024-02-25 15:00:55,013:INFO:Declaring metric variables
+2024-02-25 15:00:55,017:INFO:Importing untrained model
+2024-02-25 15:00:55,022:INFO:Gradient Boosting Regressor Imported successfully
+2024-02-25 15:00:55,032:INFO:Starting cross validation
+2024-02-25 15:00:55,033:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:55,063:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:55,071:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:55,081:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:55,091:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:55,103:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:55,117:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:55,125:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:55,948:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:55,951:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:56,613:INFO:Calculating mean and std
+2024-02-25 15:00:56,614:INFO:Creating metrics dataframe
+2024-02-25 15:00:56,615:INFO:Uploading results into container
+2024-02-25 15:00:56,616:INFO:Uploading model into container now
+2024-02-25 15:00:56,616:INFO:_master_model_container: 16
+2024-02-25 15:00:56,617:INFO:_display_container: 2
+2024-02-25 15:00:56,617:INFO:GradientBoostingRegressor(random_state=123)
+2024-02-25 15:00:56,617:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:56,753:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:56,753:INFO:Creating metrics dataframe
+2024-02-25 15:00:56,762:INFO:Initializing Light Gradient Boosting Machine
+2024-02-25 15:00:56,762:INFO:Total runtime is 0.3865721265474955 minutes
+2024-02-25 15:00:56,764:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:56,765:INFO:Initializing create_model()
+2024-02-25 15:00:56,765:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:56,765:INFO:Checking exceptions
+2024-02-25 15:00:56,765:INFO:Importing libraries
+2024-02-25 15:00:56,765:INFO:Copying training dataset
+2024-02-25 15:00:56,776:INFO:Defining folds
+2024-02-25 15:00:56,776:INFO:Declaring metric variables
+2024-02-25 15:00:56,780:INFO:Importing untrained model
+2024-02-25 15:00:56,785:INFO:Light Gradient Boosting Machine Imported successfully
+2024-02-25 15:00:56,793:INFO:Starting cross validation
+2024-02-25 15:00:56,794:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:56,820:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:56,825:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:56,833:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:56,837:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:56,849:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:56,864:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:56,872:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:57,458:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:57,466:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:57,796:INFO:Calculating mean and std
+2024-02-25 15:00:57,797:INFO:Creating metrics dataframe
+2024-02-25 15:00:57,800:INFO:Uploading results into container
+2024-02-25 15:00:57,800:INFO:Uploading model into container now
+2024-02-25 15:00:57,800:INFO:_master_model_container: 17
+2024-02-25 15:00:57,800:INFO:_display_container: 2
+2024-02-25 15:00:57,801:INFO:LGBMRegressor(n_jobs=-1, random_state=123)
+2024-02-25 15:00:57,801:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:57,956:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:57,956:INFO:Creating metrics dataframe
+2024-02-25 15:00:57,964:INFO:Initializing Dummy Regressor
+2024-02-25 15:00:57,964:INFO:Total runtime is 0.4066080729166667 minutes
+2024-02-25 15:00:57,968:INFO:SubProcess create_model() called ==================================
+2024-02-25 15:00:57,968:INFO:Initializing create_model()
+2024-02-25 15:00:57,968:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000002852D7B3D60>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:57,968:INFO:Checking exceptions
+2024-02-25 15:00:57,968:INFO:Importing libraries
+2024-02-25 15:00:57,968:INFO:Copying training dataset
+2024-02-25 15:00:57,977:INFO:Defining folds
+2024-02-25 15:00:57,977:INFO:Declaring metric variables
+2024-02-25 15:00:57,982:INFO:Importing untrained model
+2024-02-25 15:00:57,985:INFO:Dummy Regressor Imported successfully
+2024-02-25 15:00:57,993:INFO:Starting cross validation
+2024-02-25 15:00:57,994:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-02-25 15:00:58,016:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,021:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,030:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,037:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,045:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,062:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,069:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,073:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,083:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,122:INFO:Calculating mean and std
+2024-02-25 15:00:58,124:INFO:Creating metrics dataframe
+2024-02-25 15:00:58,125:INFO:Uploading results into container
+2024-02-25 15:00:58,126:INFO:Uploading model into container now
+2024-02-25 15:00:58,127:INFO:_master_model_container: 18
+2024-02-25 15:00:58,127:INFO:_display_container: 2
+2024-02-25 15:00:58,127:INFO:DummyRegressor()
+2024-02-25 15:00:58,127:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:58,265:INFO:SubProcess create_model() end ==================================
+2024-02-25 15:00:58,265:INFO:Creating metrics dataframe
+2024-02-25 15:00:58,277:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:323: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  master_display_.apply(
+
+2024-02-25 15:00:58,286:INFO:Initializing create_model()
+2024-02-25 15:00:58,286:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=LGBMRegressor(n_jobs=-1, random_state=123), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:58,286:INFO:Checking exceptions
+2024-02-25 15:00:58,288:INFO:Importing libraries
+2024-02-25 15:00:58,289:INFO:Copying training dataset
+2024-02-25 15:00:58,303:INFO:Defining folds
+2024-02-25 15:00:58,304:INFO:Declaring metric variables
+2024-02-25 15:00:58,304:INFO:Importing untrained model
+2024-02-25 15:00:58,304:INFO:Declaring custom model
+2024-02-25 15:00:58,305:INFO:Light Gradient Boosting Machine Imported successfully
+2024-02-25 15:00:58,306:INFO:Cross validation set to False
+2024-02-25 15:00:58,306:INFO:Fitting Model
+2024-02-25 15:00:58,310:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,329:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2024-02-25 15:00:58,331:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000378 seconds.
+2024-02-25 15:00:58,331:INFO:You can set `force_row_wise=true` to remove the overhead.
+2024-02-25 15:00:58,331:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2024-02-25 15:00:58,331:INFO:[LightGBM] [Info] Total Bins 877
+2024-02-25 15:00:58,331:INFO:[LightGBM] [Info] Number of data points in the train set: 4083, number of used features: 29
+2024-02-25 15:00:58,331:INFO:[LightGBM] [Info] Start training from score 4.058649
+2024-02-25 15:00:58,414:INFO:LGBMRegressor(n_jobs=-1, random_state=123)
+2024-02-25 15:00:58,414:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:58,602:INFO:_master_model_container: 18
+2024-02-25 15:00:58,602:INFO:_display_container: 2
+2024-02-25 15:00:58,602:INFO:LGBMRegressor(n_jobs=-1, random_state=123)
+2024-02-25 15:00:58,603:INFO:compare_models() successfully completed......................................
+2024-02-25 15:00:58,603:INFO:Initializing finalize_model()
+2024-02-25 15:00:58,604:INFO:finalize_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=LGBMRegressor(n_jobs=-1, random_state=123), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2024-02-25 15:00:58,604:INFO:Finalizing LGBMRegressor(n_jobs=-1, random_state=123)
+2024-02-25 15:00:58,611:INFO:Initializing create_model()
+2024-02-25 15:00:58,613:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002852D7B1C00>, estimator=LGBMRegressor(n_jobs=-1, random_state=123), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-25 15:00:58,613:INFO:Checking exceptions
+2024-02-25 15:00:58,614:INFO:Importing libraries
+2024-02-25 15:00:58,614:INFO:Copying training dataset
+2024-02-25 15:00:58,615:INFO:Defining folds
+2024-02-25 15:00:58,615:INFO:Declaring metric variables
+2024-02-25 15:00:58,615:INFO:Importing untrained model
+2024-02-25 15:00:58,615:INFO:Declaring custom model
+2024-02-25 15:00:58,615:INFO:Light Gradient Boosting Machine Imported successfully
+2024-02-25 15:00:58,616:INFO:Cross validation set to False
+2024-02-25 15:00:58,616:INFO:Fitting Model
+2024-02-25 15:00:58,619:WARNING:C:\Users\sashe\anaconda3\envs\mlopsassignment\lib\site-packages\numpy\core\_methods.py:176: RuntimeWarning: overflow encountered in multiply
+  x = um.multiply(x, x, out=x)
+
+2024-02-25 15:00:58,640:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2024-02-25 15:00:58,641:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000429 seconds.
+2024-02-25 15:00:58,641:INFO:You can set `force_row_wise=true` to remove the overhead.
+2024-02-25 15:00:58,641:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2024-02-25 15:00:58,641:INFO:[LightGBM] [Info] Total Bins 905
+2024-02-25 15:00:58,642:INFO:[LightGBM] [Info] Number of data points in the train set: 5834, number of used features: 29
+2024-02-25 15:00:58,642:INFO:[LightGBM] [Info] Start training from score 3.939391
+2024-02-25 15:00:58,742:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['accommodates', 'availability_30',
+                                             'bathrooms', 'bedrooms', 'beds',
+                                             'calculated_host_listings_count',
+                                             'cancellation_policy_flexi...
+                                             'Free Parking on Premises',
+                                             'Indoor Fireplace', 'Pool',
+                                             'Shampoo', 'Smoke Detector',
+                                             'Suitable for Events'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=123))])
+2024-02-25 15:00:58,743:INFO:create_model() successfully completed......................................
+2024-02-25 15:00:58,900:INFO:_master_model_container: 18
+2024-02-25 15:00:58,900:INFO:_display_container: 2
+2024-02-25 15:00:58,908:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['accommodates', 'availability_30',
+                                             'bathrooms', 'bedrooms', 'beds',
+                                             'calculated_host_listings_count',
+                                             'cancellation_policy_flexi...
+                                             'Free Parking on Premises',
+                                             'Indoor Fireplace', 'Pool',
+                                             'Shampoo', 'Smoke Detector',
+                                             'Suitable for Events'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=123))])
+2024-02-25 15:00:58,908:INFO:finalize_model() successfully completed......................................
+2024-02-25 15:00:59,068:INFO:Initializing save_model()
+2024-02-25 15:00:59,068:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['accommodates', 'availability_30',
+                                             'bathrooms', 'bedrooms', 'beds',
+                                             'calculated_host_listings_count',
+                                             'cancellation_policy_flexi...
+                                             'Free Parking on Premises',
+                                             'Indoor Fireplace', 'Pool',
+                                             'Shampoo', 'Smoke Detector',
+                                             'Suitable for Events'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=123))]), model_name=../../../../models/regression, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\sashe\AppData\Local\Temp\joblib),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['accommodates', 'availability_30',
+                                             'bathrooms', 'bedrooms', 'beds',
+                                             'calculated_host_li...
+                                             'Doorman', 'Essentials',
+                                             'Fire Extinguisher',
+                                             'First Aid Kit',
+                                             'Free Parking on Premises',
+                                             'Indoor Fireplace', 'Pool',
+                                             'Shampoo', 'Smoke Detector',
+                                             'Suitable for Events'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-02-25 15:00:59,068:INFO:Adding model into prep_pipe
+2024-02-25 15:00:59,068:WARNING:Only Model saved as it was a pipeline.
+2024-02-25 15:00:59,076:INFO:../../../../models/regression.pkl saved in current working directory
+2024-02-25 15:00:59,087:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('target_transformation',
+                 TransformerWrapperWithInverse(transformer=TargetTransformer(estimator=PowerTransformer(standardize=False)))),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['accommodates', 'availability_30',
+                                             'bathrooms', 'bedrooms', 'beds',
+                                             'calculated_host_listings_count',
+                                             'cancellation_policy_flexi...
+                                             'Free Parking on Premises',
+                                             'Indoor Fireplace', 'Pool',
+                                             'Shampoo', 'Smoke Detector',
+                                             'Suitable for Events'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 LGBMRegressor(n_jobs=-1, random_state=123))])
+2024-02-25 15:00:59,087:INFO:save_model() successfully completed......................................

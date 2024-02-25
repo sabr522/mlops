@@ -1,0 +1,9 @@
+dataset:
+  path: C:/Users/sashe/mlops/data/01_homely_resort_listing.csv
+setup:
+  feature_selection: true
+  n_features_to_select: 0.45
+  remove_multicollinearity: true
+  multicollinearity_threshold: 0.9
+model:
+  path: ../../../../models/regression

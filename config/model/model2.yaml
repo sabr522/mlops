@@ -1,10 +1,9 @@
 dataset:
-  path: "C:/Users/sashe/mlops/01_homely_resort_listing.csv"
+  path: "C:/Users/sashe/mlops/data/01_homely_resort_listing.csv"
 setup:
   feature_selection: True
-  n_features_to_select : 0.4
+  n_features_to_select : 0.45
   remove_multicollinearity: True
   multicollinearity_threshold: 0.9
-  transform_target: True
 model:
   path: "../../../../models/regression"
